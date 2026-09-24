@@ -1,0 +1,7314 @@
+{
+ "rules": {
+  "coverage": {
+   "A1": 0.95,
+   "A2": 0.95,
+   "B1": 0.93
+  },
+  "budget": {
+   "A1": [
+    "A2",
+    3
+   ],
+   "A2": [
+    "B1",
+    3
+   ],
+   "B1": [
+    null,
+    0
+   ]
+  },
+  "words_per_passage": {
+   "A1": [
+    60,
+    90
+   ],
+   "A2": [
+    90,
+    120
+   ],
+   "B1": [
+    110,
+    150
+   ]
+  },
+  "questions": [
+   4,
+   5
+  ]
+ },
+ "passages": [
+  {
+   "id": "p0001",
+   "lv": "A1",
+   "title": "Моя семья",
+   "oop": {
+    "оля": "name"
+   },
+   "sentences": [
+    [
+     "Привет! Я Маша, мне двадцать лет.",
+     "Hi! I'm Masha, I'm twenty years old."
+    ],
+    [
+     "Я учусь в университете в Москве.",
+     "I study at a university in Moscow."
+    ],
+    [
+     "У меня большая семья.",
+     "I have a big family."
+    ],
+    [
+     "Мой папа работает врачом в больнице.",
+     "My dad works as a doctor in a hospital."
+    ],
+    [
+     "Мама работает в школе, она учитель.",
+     "Mum works at a school, she is a teacher."
+    ],
+    [
+     "У меня есть брат и сестра.",
+     "I have a brother and a sister."
+    ],
+    [
+     "Брат Саша ещё маленький, ему семь лет.",
+     "My brother Sasha is still little, he is seven."
+    ],
+    [
+     "Он очень любит собак и часто играет в парке.",
+     "He loves dogs very much and often plays in the park."
+    ],
+    [
+     "Сестра Оля уже не живёт с нами, у неё есть муж и дочь.",
+     "My sister Olya no longer lives with us; she has a husband and a daughter."
+    ],
+    [
+     "В субботу мы все вместе едим у бабушки.",
+     "On Saturday we all eat together at grandma's."
+    ],
+    [
+     "Бабушка готовит очень вкусный суп.",
+     "Grandma makes very tasty soup."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Сколько лет Маше?",
+     "en": "How old is Masha?",
+     "type": "mc",
+     "options": [
+      "Двадцать лет",
+      "Семь лет",
+      "Тридцать лет",
+      "Сорок лет"
+     ],
+     "answer": 0,
+     "words": [
+      "год"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "Папа Маши работает в школе.",
+     "en": "Masha's dad works at a school.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "папа",
+      "работать"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Кто очень любит собак?",
+     "en": "Who loves dogs very much?",
+     "type": "mc",
+     "options": [
+      "Маша",
+      "Оля",
+      "Саша",
+      "Бабушка"
+     ],
+     "answer": 2,
+     "words": [
+      "любить",
+      "собака"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "У Оли есть своя семья.",
+     "en": "Olya has her own family.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "муж",
+      "дочь"
+     ],
+     "sentence": 8
+    },
+    {
+     "q": "Что готовит бабушка?",
+     "en": "What does grandma make?",
+     "type": "mc",
+     "options": [
+      "Рыбу",
+      "Суп",
+      "Мясо",
+      "Чай"
+     ],
+     "answer": 1,
+     "words": [
+      "готовить",
+      "суп"
+     ],
+     "sentence": 10
+    }
+   ]
+  },
+  {
+   "id": "p0002",
+   "lv": "A1",
+   "title": "Мой день",
+   "oop": {},
+   "sentences": [
+    [
+     "Я Игорь, я работаю в большой компании.",
+     "I'm Igor, I work at a big company."
+    ],
+    [
+     "В семь часов утра я уже не сплю.",
+     "At seven in the morning I'm already awake."
+    ],
+    [
+     "На завтрак я пью кофе и ем хлеб с сыром.",
+     "For breakfast I drink coffee and eat bread with cheese."
+    ],
+    [
+     "Потом я еду на работу на метро.",
+     "Then I go to work by metro."
+    ],
+    [
+     "Наша компания находится в центре города.",
+     "Our company is in the city centre."
+    ],
+    [
+     "Я начинаю работать в девять.",
+     "I start work at nine."
+    ],
+    [
+     "В час дня я иду в ресторан с другом.",
+     "At one in the afternoon I go to a restaurant with a friend."
+    ],
+    [
+     "Вечером я иду домой.",
+     "In the evening I go home."
+    ],
+    [
+     "Дома я готовлю ужин, смотрю фильм или читаю книгу.",
+     "At home I cook dinner, watch a film or read a book."
+    ],
+    [
+     "В одиннадцать часов я иду спать.",
+     "At eleven o'clock I go to bed."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Что Игорь пьёт на завтрак?",
+     "en": "What does Igor drink for breakfast?",
+     "type": "mc",
+     "options": [
+      "Чай",
+      "Сок",
+      "Молоко",
+      "Кофе"
+     ],
+     "answer": 3,
+     "words": [
+      "завтрак",
+      "пить",
+      "кофе"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Игорь едет на работу на машине.",
+     "en": "Igor goes to work by car.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "работа",
+      "метро"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Когда Игорь начинает работать?",
+     "en": "When does Igor start work?",
+     "type": "mc",
+     "options": [
+      "В семь",
+      "В девять",
+      "В час",
+      "В одиннадцать"
+     ],
+     "answer": 1,
+     "words": [
+      "начинать",
+      "работать"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Днём Игорь ест не один, а с другом.",
+     "en": "In the afternoon Igor does not eat alone but with a friend.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "ресторан",
+      "друг"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "Игорь идёт спать в десять часов.",
+     "en": "Igor goes to bed at ten o'clock.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "спать"
+     ],
+     "sentence": 9
+    }
+   ]
+  },
+  {
+   "id": "p0003",
+   "lv": "A1",
+   "title": "В магазине",
+   "oop": {
+    "нина": "name"
+   },
+   "sentences": [
+    [
+     "Сегодня суббота, и Нина идёт в магазин рядом с домом.",
+     "Today is Saturday, and Nina goes to the shop near her house."
+    ],
+    [
+     "— Здравствуйте! У вас есть молоко?",
+     "\"Hello! Do you have milk?\""
+    ],
+    [
+     "— Да, конечно. Вот молоко. Что ещё?",
+     "\"Yes, of course. Here is the milk. What else?\""
+    ],
+    [
+     "— Хлеб, сыр и шесть яблок, пожалуйста.",
+     "\"Bread, cheese and six apples, please.\""
+    ],
+    [
+     "— Яблоки зелёные или красные?",
+     "\"Green apples or red ones?\""
+    ],
+    [
+     "— Красные. Сколько всё это стоит?",
+     "\"Red. How much does all this cost?\""
+    ],
+    [
+     "— Вместе сто двадцать.",
+     "\"One hundred twenty altogether.\""
+    ],
+    [
+     "— Вот, пожалуйста. У вас очень хороший хлеб!",
+     "\"Here you are. You have very good bread!\""
+    ],
+    [
+     "— Спасибо! До свидания!",
+     "\"Thank you! Goodbye!\""
+    ],
+    [
+     "Нина идёт домой и готовит завтрак.",
+     "Nina goes home and makes breakfast."
+    ],
+    [
+     "Она ест хлеб с сыром и яблоко и пьёт кофе с молоком.",
+     "She eats bread with cheese and an apple and drinks coffee with milk."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Нина идёт в магазин в другом районе.",
+     "en": "Nina goes to a shop in another district.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "магазин"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "Сколько яблок хочет Нина?",
+     "en": "How many apples does Nina want?",
+     "type": "mc",
+     "options": [
+      "Два",
+      "Пять",
+      "Шесть",
+      "Десять"
+     ],
+     "answer": 2,
+     "words": [
+      "яблоко"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Какие яблоки берёт Нина?",
+     "en": "Which apples does Nina take?",
+     "type": "mc",
+     "options": [
+      "Красные",
+      "Зелёные",
+      "Жёлтые",
+      "Большие"
+     ],
+     "answer": 0,
+     "words": [
+      "красный"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Нине нравится хлеб в этом магазине.",
+     "en": "Nina likes the bread in this shop.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "хороший",
+      "хлеб"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0004",
+   "lv": "A1",
+   "title": "Сообщение от мамы",
+   "oop": {
+    "кола": "name",
+    "целовать": "letter sign-off (with love)"
+   },
+   "sentences": [
+    [
+     "Привет, Дима! Я сегодня работаю до восьми.",
+     "Hi, Dima! I'm working until eight today."
+    ],
+    [
+     "Пожалуйста, купи хлеб и молоко.",
+     "Please buy bread and milk."
+    ],
+    [
+     "Деньги на столе на кухне.",
+     "The money is on the table in the kitchen."
+    ],
+    [
+     "Обед тоже на столе, суп ещё горячий.",
+     "Lunch is on the table too, the soup is still hot."
+    ],
+    [
+     "И ещё: собака ждёт тебя, ей нужно гулять в парке.",
+     "And one more thing: the dog is waiting for you, it needs a walk in the park."
+    ],
+    [
+     "Папа будет дома в шесть часов.",
+     "Dad will be home at six o'clock."
+    ],
+    [
+     "Вечером мы все вместе смотрим новый фильм.",
+     "In the evening we all watch a new film together."
+    ],
+    [
+     "Твой друг Коля звонил, у него есть вопрос про урок.",
+     "Your friend Kolya called, he has a question about the lesson."
+    ],
+    [
+     "Позвони ему, пожалуйста.",
+     "Call him back, please."
+    ],
+    [
+     "Потом, если хочешь, можно играть на компьютере.",
+     "Then, if you want, you can play on the computer."
+    ],
+    [
+     "Целую, мама.",
+     "Love, Mum."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "До какого часа мама работает сегодня?",
+     "en": "Until what time is Mum working today?",
+     "type": "mc",
+     "options": [
+      "До шести",
+      "До восьми",
+      "До девяти",
+      "До семи"
+     ],
+     "answer": 1,
+     "words": [
+      "работать"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "Мама оставила деньги на кухне.",
+     "en": "Mum left the money in the kitchen.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "деньги",
+      "кухня"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Кому нужно гулять?",
+     "en": "Who needs a walk?",
+     "type": "mc",
+     "options": [
+      "Папе",
+      "Бабушке",
+      "Коле",
+      "Собаке"
+     ],
+     "answer": 3,
+     "words": [
+      "собака",
+      "гулять"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "Папа придёт домой в восемь часов.",
+     "en": "Dad will come home at eight o'clock.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "папа",
+      "дома"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Почему Диме нужно позвонить Коле?",
+     "en": "Why does Dima need to call Kolya?",
+     "type": "mc",
+     "options": [
+      "У Коли есть вопрос",
+      "Коля хочет новый фильм",
+      "Коля ждёт собаку",
+      "У Коли нет денег"
+     ],
+     "answer": 0,
+     "words": [
+      "друг",
+      "вопрос"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0005",
+   "lv": "A1",
+   "title": "Какая погода?",
+   "oop": {},
+   "sentences": [
+    [
+     "Сегодня в Москве холодная погода.",
+     "Today the weather in Moscow is cold."
+    ],
+    [
+     "Утром идёт снег, а днём будет солнце.",
+     "In the morning it is snowing, and in the afternoon there will be sun."
+    ],
+    [
+     "Вечером погода будет плохая, снова пойдёт снег.",
+     "In the evening the weather will be bad, it will snow again."
+    ],
+    [
+     "Завтра будет тёплый день, но может пойти дождь.",
+     "Tomorrow will be a warm day, but it may rain."
+    ],
+    [
+     "В субботу и воскресенье погода будет хорошая.",
+     "On Saturday and Sunday the weather will be good."
+    ],
+    [
+     "Можно гулять в парке или ехать к реке.",
+     "You can walk in the park or go to the river."
+    ],
+    [
+     "В понедельник снова будет холодно, поэтому дети пойдут в школу в тёплой одежде.",
+     "On Monday it will be cold again, so the children will go to school in warm clothes."
+    ],
+    [
+     "Это последняя неделя марта, и скоро весна!",
+     "This is the last week of March, and spring is coming soon!"
+    ],
+    [
+     "Мы очень ждём солнце и тёплые дни.",
+     "We are really waiting for the sun and warm days."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Какая погода утром?",
+     "en": "What is the weather like in the morning?",
+     "type": "mc",
+     "options": [
+      "Идёт дождь",
+      "Много солнца",
+      "Идёт снег",
+      "Очень тепло"
+     ],
+     "answer": 2,
+     "words": [
+      "утро",
+      "снег"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Завтра будет очень холодный день.",
+     "en": "Tomorrow will be a very cold day.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "завтра",
+      "тёплый"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Когда будет хорошая погода?",
+     "en": "When will the weather be good?",
+     "type": "mc",
+     "options": [
+      "В понедельник и вторник",
+      "В субботу и воскресенье",
+      "Завтра утром",
+      "Сегодня вечером"
+     ],
+     "answer": 1,
+     "words": [
+      "суббота",
+      "погода"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "Сейчас конец марта.",
+     "en": "It is the end of March now.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "неделя",
+      "март"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0006",
+   "lv": "A1",
+   "title": "В поезде",
+   "oop": {},
+   "sentences": [
+    [
+     "Анна едет в поезде к сестре.",
+     "Anna is travelling by train to see her sister."
+    ],
+    [
+     "У неё билет на место номер двенадцать.",
+     "She has a ticket for seat number twelve."
+    ],
+    [
+     "Рядом сидит старый мужчина, он читает книгу.",
+     "An old man is sitting next to her, he is reading a book."
+    ],
+    [
+     "Потом они начинают говорить о погоде и о городе.",
+     "Then they start talking about the weather and the city."
+    ],
+    [
+     "Мужчина тоже едет к семье, у него там сын и дочь.",
+     "The man is also going to his family, he has a son and a daughter there."
+    ],
+    [
+     "Анна пьёт чай и смотрит в окно: там лес, река и маленькие дома.",
+     "Anna drinks tea and looks out of the window: there is a forest, a river and small houses."
+    ],
+    [
+     "Поезд идёт долго, шесть часов.",
+     "The train goes for a long time, six hours."
+    ],
+    [
+     "В девять часов вечера поезд уже в городе.",
+     "At nine in the evening the train is already in the city."
+    ],
+    [
+     "Сестра ждёт Анну, и они вместе едут домой.",
+     "Her sister is waiting for Anna, and they go home together."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Какое место у Анны?",
+     "en": "Which seat does Anna have?",
+     "type": "mc",
+     "options": [
+      "Номер два",
+      "Номер двенадцать",
+      "Номер девятнадцать",
+      "Номер шесть"
+     ],
+     "answer": 1,
+     "words": [
+      "билет",
+      "место"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Мужчина в поезде слушает музыку.",
+     "en": "The man on the train is listening to music.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "мужчина",
+      "читать"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Что Анна видит в окно?",
+     "en": "What does Anna see out of the window?",
+     "type": "mc",
+     "options": [
+      "Море и солнце",
+      "Большой город",
+      "Школу и парк",
+      "Лес и реку"
+     ],
+     "answer": 3,
+     "words": [
+      "окно"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Анна в поезде больше пяти часов.",
+     "en": "Anna is on the train for more than five hours.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "поезд",
+      "долго"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "Кто ждёт Анну?",
+     "en": "Who is waiting for Anna?",
+     "type": "mc",
+     "options": [
+      "Её сестра",
+      "Её мама",
+      "Старый мужчина",
+      "Её муж"
+     ],
+     "answer": 0,
+     "words": [
+      "сестра",
+      "ждать"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0007",
+   "lv": "A1",
+   "title": "Новая школа",
+   "oop": {},
+   "sentences": [
+    [
+     "В сентябре мой сын Петя идёт в новую школу.",
+     "In September my son Petya goes to a new school."
+    ],
+    [
+     "Школа большая и красивая, а рядом есть парк.",
+     "The school is big and beautiful, and there is a park nearby."
+    ],
+    [
+     "Учитель у Пети очень добрый и весёлый.",
+     "Petya's teacher is very kind and cheerful."
+    ],
+    [
+     "На уроке дети читают, пишут и изучают английский язык.",
+     "In class the children read, write and study English."
+    ],
+    [
+     "У Пети уже есть новый друг Миша.",
+     "Petya already has a new friend, Misha."
+    ],
+    [
+     "После урока мальчики вместе играют в парке.",
+     "After class the boys play together in the park."
+    ],
+    [
+     "Вечером Петя говорит: «Мама, мне очень нравится моя школа!»",
+     "In the evening Petya says: \"Mum, I really like my school!\""
+    ],
+    [
+     "Я очень рада, что сыну там хорошо.",
+     "I am very glad that my son is happy there."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Рядом со школой есть парк.",
+     "en": "There is a park next to the school.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "парк"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Какой учитель у Пети?",
+     "en": "What is Petya's teacher like?",
+     "type": "mc",
+     "options": [
+      "Плохой и старый",
+      "Новый и молодой",
+      "Добрый и весёлый",
+      "Большой и сильный"
+     ],
+     "answer": 2,
+     "words": [
+      "учитель",
+      "добрый"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Какой язык изучают дети?",
+     "en": "Which language do the children study?",
+     "type": "mc",
+     "options": [
+      "Английский",
+      "Русский",
+      "Французский",
+      "Русский и французский"
+     ],
+     "answer": 0,
+     "words": [
+      "изучать",
+      "английский",
+      "язык"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "После урока Петя идёт домой один.",
+     "en": "After class Petya goes home alone.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "после",
+      "урок",
+      "играть"
+     ],
+     "sentence": 5
+    }
+   ]
+  },
+  {
+   "id": "p0008",
+   "lv": "A1",
+   "title": "В ресторане",
+   "oop": {},
+   "sentences": [
+    [
+     "Вечером Олег и Лена идут в ресторан.",
+     "In the evening Oleg and Lena go to a restaurant."
+    ],
+    [
+     "— Добрый вечер! Что вы хотите есть?",
+     "\"Good evening! What would you like to eat?\""
+    ],
+    [
+     "— Мне суп и рыбу, пожалуйста, — говорит Лена.",
+     "\"Soup and fish for me, please,\" says Lena."
+    ],
+    [
+     "— А мне мясо, — говорит Олег.",
+     "\"And meat for me,\" says Oleg."
+    ],
+    [
+     "— Что будете пить?",
+     "\"What will you drink?\""
+    ],
+    [
+     "— Два чая, пожалуйста. Мне с сахаром, а жене без сахара.",
+     "\"Two teas, please. With sugar for me, and without sugar for my wife.\""
+    ],
+    [
+     "Еда очень вкусная, а рыба просто отличная.",
+     "The food is very tasty, and the fish is simply excellent."
+    ],
+    [
+     "Лена говорит, что это лучший ресторан в городе.",
+     "Lena says that this is the best restaurant in the city."
+    ],
+    [
+     "В конце Олег просит счёт.",
+     "At the end Oleg asks for the bill."
+    ],
+    [
+     "Ужин не очень дорогой, и им всё нравится.",
+     "The dinner is not very expensive, and they like everything."
+    ],
+    [
+     "Они решают прийти сюда ещё раз в субботу.",
+     "They decide to come here again on Saturday."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Что ест Лена?",
+     "en": "What does Lena eat?",
+     "type": "mc",
+     "options": [
+      "Суп и мясо",
+      "Суп и рыбу",
+      "Только мясо",
+      "Рыбу и хлеб"
+     ],
+     "answer": 1,
+     "words": [
+      "суп",
+      "рыба"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Лена пьёт чай с сахаром.",
+     "en": "Lena drinks tea with sugar.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "чай",
+      "сахар"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Какая в ресторане еда?",
+     "en": "What is the food like in the restaurant?",
+     "type": "mc",
+     "options": [
+      "Холодная",
+      "Плохая",
+      "Старая",
+      "Вкусная"
+     ],
+     "answer": 3,
+     "words": [
+      "еда",
+      "вкусный"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "Счёт просит Лена.",
+     "en": "Lena asks for the bill.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "счёт"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0009",
+   "lv": "A1",
+   "title": "Моя собака Бим",
+   "oop": {
+    "бим": "name"
+   },
+   "sentences": [
+    [
+     "У меня есть собака Бим.",
+     "I have a dog called Bim."
+    ],
+    [
+     "Бим большой и белый, но голова у него чёрная.",
+     "Bim is big and white, but his head is black."
+    ],
+    [
+     "Ему три года.",
+     "He is three years old."
+    ],
+    [
+     "Каждое утро мы гуляем в парке.",
+     "Every morning we walk in the park."
+    ],
+    [
+     "Там Бим видит других собак и играет с ними.",
+     "There Bim sees other dogs and plays with them."
+    ],
+    [
+     "Он очень любит воду и всегда бежит прямо в реку.",
+     "He loves water very much and always runs straight into the river."
+    ],
+    [
+     "Потом он идёт домой, и мама говорит: «Бим, нельзя!»",
+     "Then he goes home, and Mum says: \"Bim, no!\""
+    ],
+    [
+     "Вечером Бим спит в комнате около моей кровати.",
+     "In the evening Bim sleeps in the room near my bed."
+    ],
+    [
+     "Бим мой лучший друг.",
+     "Bim is my best friend."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Бим маленький и чёрный.",
+     "en": "Bim is small and black.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "большой",
+      "белый"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Сколько лет Биму?",
+     "en": "How old is Bim?",
+     "type": "mc",
+     "options": [
+      "Один год",
+      "Два года",
+      "Три года",
+      "Пять лет"
+     ],
+     "answer": 2,
+     "words": [
+      "год"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Что очень любит Бим?",
+     "en": "What does Bim love very much?",
+     "type": "mc",
+     "options": [
+      "Воду",
+      "Молоко",
+      "Кошек",
+      "Снег"
+     ],
+     "answer": 0,
+     "words": [
+      "любить",
+      "вода"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Бим спит в моей комнате.",
+     "en": "Bim sleeps in my room.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "спать",
+      "комната"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0010",
+   "lv": "A1",
+   "title": "Объявление в магазине",
+   "oop": {},
+   "sentences": [
+    [
+     "Внимание!",
+     "Attention!"
+    ],
+    [
+     "С понедельника до среды наш магазин не работает.",
+     "From Monday to Wednesday our shop is closed."
+    ],
+    [
+     "В четверг мы снова работаем с девяти утра до восьми вечера.",
+     "On Thursday we are open again from nine in the morning to eight in the evening."
+    ],
+    [
+     "В пятницу и субботу у нас есть горячий хлеб, сыр и молоко.",
+     "On Friday and Saturday we have hot fresh bread, cheese and milk."
+    ],
+    [
+     "В воскресенье магазин работает до шести.",
+     "On Sunday the shop is open until six."
+    ],
+    [
+     "Хлеб и молоко можно купить в магазине на улице Мира, это рядом, пять минут от нас.",
+     "You can buy bread and milk at the shop on Mira Street, it is close, five minutes from us."
+    ],
+    [
+     "Если у вас есть вопрос, звоните по телефону.",
+     "If you have a question, call us by phone."
+    ],
+    [
+     "Спасибо и хорошего дня!",
+     "Thank you and have a good day!"
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Когда магазин не работает?",
+     "en": "When is the shop closed?",
+     "type": "mc",
+     "options": [
+      "Со вторника до четверга",
+      "С понедельника до среды",
+      "Только в воскресенье",
+      "Каждый вечер"
+     ],
+     "answer": 1,
+     "words": [
+      "понедельник",
+      "среда"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "В четверг магазин работает с восьми утра.",
+     "en": "On Thursday the shop opens at eight in the morning.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "четверг",
+      "утро"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "До какого часа магазин работает в воскресенье?",
+     "en": "Until what time is the shop open on Sunday?",
+     "type": "mc",
+     "options": [
+      "До восьми",
+      "До девяти",
+      "До пяти",
+      "До шести"
+     ],
+     "answer": 3,
+     "words": [
+      "воскресенье",
+      "работать"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "Другой магазин находится близко.",
+     "en": "The other shop is close.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "улица",
+      "рядом"
+     ],
+     "sentence": 5
+    }
+   ]
+  },
+  {
+   "id": "p0011",
+   "lv": "A1",
+   "title": "День рождения бабушки",
+   "oop": {},
+   "sentences": [
+    [
+     "Завтра у нашей бабушки день рождения.",
+     "Tomorrow is our grandma's birthday."
+    ],
+    [
+     "Ей будет восемьдесят лет!",
+     "She will be eighty years old!"
+    ],
+    [
+     "Вся семья будет у неё дома.",
+     "The whole family will be at her home."
+    ],
+    [
+     "Папа и мама уже купили подарок, это новый телефон.",
+     "Mum and Dad have already bought a present, it's a new phone."
+    ],
+    [
+     "Мой брат пишет для бабушки письмо.",
+     "My brother is writing a letter for grandma."
+    ],
+    [
+     "А я готовлю песню, потому что бабушка очень любит музыку.",
+     "And I am preparing a song, because grandma loves music very much."
+    ],
+    [
+     "Дедушка говорит, что бабушка ещё не знает про телефон.",
+     "Grandpa says that grandma doesn't know about the phone yet."
+    ],
+    [
+     "Мама готовит бабушке её любимый суп, а папа покупает цветы.",
+     "Mum is making grandma's favourite soup, and Dad is buying flowers."
+    ],
+    [
+     "Это будет большой и весёлый день.",
+     "It will be a big and happy day."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Сколько лет будет бабушке?",
+     "en": "How old will grandma be?",
+     "type": "mc",
+     "options": [
+      "Шестьдесят пять лет",
+      "Семьдесят лет",
+      "Восемьдесят лет",
+      "Девяносто лет"
+     ],
+     "answer": 2,
+     "words": [
+      "год"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Родители купили бабушке телефон.",
+     "en": "The parents bought grandma a phone.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "подарок",
+      "телефон"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Что делает брат?",
+     "en": "What is the brother doing?",
+     "type": "mc",
+     "options": [
+      "Пишет письмо",
+      "Готовит песню",
+      "Покупает подарок",
+      "Звонит бабушке"
+     ],
+     "answer": 0,
+     "words": [
+      "брат",
+      "письмо"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "Бабушка уже знает про подарок.",
+     "en": "Grandma already knows about the present.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "знать",
+      "телефон"
+     ],
+     "sentence": 6
+    }
+   ]
+  },
+  {
+   "id": "p0012",
+   "lv": "A1",
+   "title": "Наша квартира",
+   "oop": {},
+   "sentences": [
+    [
+     "Мы живём в новой квартире в большом белом доме.",
+     "We live in a new flat in a big white building."
+    ],
+    [
+     "Квартира не очень большая, но хорошая.",
+     "The flat is not very big, but it's nice."
+    ],
+    [
+     "В ней три комнаты и кухня.",
+     "It has three rooms and a kitchen."
+    ],
+    [
+     "В моей комнате есть кровать, стол и два стула.",
+     "In my room there is a bed, a table and two chairs."
+    ],
+    [
+     "Окно большое, и утром там много солнца.",
+     "The window is big, and in the morning there is a lot of sun."
+    ],
+    [
+     "Кухня маленькая, но мама любит там готовить.",
+     "The kitchen is small, but Mum likes cooking there."
+    ],
+    [
+     "Вечером мы вместе сидим на кухне и пьём чай.",
+     "In the evening we sit together in the kitchen and drink tea."
+    ],
+    [
+     "Рядом с домом есть парк и магазин.",
+     "Next to the house there is a park and a shop."
+    ],
+    [
+     "Мне очень нравится наша новая квартира.",
+     "I really like our new flat."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Сколько комнат в квартире?",
+     "en": "How many rooms are there in the flat?",
+     "type": "mc",
+     "options": [
+      "Две",
+      "Три",
+      "Четыре",
+      "Пять"
+     ],
+     "answer": 1,
+     "words": [
+      "комната"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "В комнате нет кровати.",
+     "en": "There is no bed in the room.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "комната",
+      "кровать"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Какая кухня в квартире?",
+     "en": "What is the kitchen in the flat like?",
+     "type": "mc",
+     "options": [
+      "Большая и новая",
+      "Красивая и большая",
+      "Старая и плохая",
+      "Маленькая"
+     ],
+     "answer": 3,
+     "words": [
+      "кухня",
+      "маленький"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "По вечерам семья пьёт чай на кухне.",
+     "en": "In the evenings the family drinks tea in the kitchen.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "вечер",
+      "чай"
+     ],
+     "sentence": 6
+    }
+   ]
+  },
+  {
+   "id": "p0013",
+   "lv": "A1",
+   "title": "Воскресенье у реки",
+   "oop": {},
+   "sentences": [
+    [
+     "В воскресенье погода очень хорошая.",
+     "On Sunday the weather is very good."
+    ],
+    [
+     "Таня едет с друзьями на машине к реке.",
+     "Tanya goes to the river by car with her friends."
+    ],
+    [
+     "Там хорошо: есть лес и много солнца.",
+     "It is nice there: there is a forest and lots of sun."
+    ],
+    [
+     "Друзья сидят у воды, едят хлеб, сыр и мясо.",
+     "The friends sit by the water and eat bread, cheese and meat."
+    ],
+    [
+     "Потом они играют и слушают музыку.",
+     "Then they play and listen to music."
+    ],
+    [
+     "Таня не идёт в воду, потому что вода ещё холодная.",
+     "Tanya does not go into the water, because the water is still cold."
+    ],
+    [
+     "Она просто читает книгу и смотрит на реку.",
+     "She just reads a book and looks at the river."
+    ],
+    [
+     "Вечером становится холодно, и друзья едут домой.",
+     "In the evening it gets cold, and the friends drive home."
+    ],
+    [
+     "Все говорят, что это был очень хороший день.",
+     "Everyone says it was a very good day."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Друзья едут к реке на поезде.",
+     "en": "The friends go to the river by train.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "машина",
+      "река"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Что едят друзья?",
+     "en": "What do the friends eat?",
+     "type": "mc",
+     "options": [
+      "Хлеб, сыр и мясо",
+      "Суп и рыбу",
+      "Только яблоки",
+      "Суп, рыбу и молоко"
+     ],
+     "answer": 0,
+     "words": [
+      "есть",
+      "хлеб"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Что делает Таня?",
+     "en": "What does Tanya do?",
+     "type": "mc",
+     "options": [
+      "Играет в воде",
+      "Готовит еду",
+      "Читает книгу",
+      "Спит в машине"
+     ],
+     "answer": 2,
+     "words": [
+      "читать",
+      "книга"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "Друзья едут домой утром.",
+     "en": "The friends go home in the morning.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "вечер",
+      "домой"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0014",
+   "lv": "A1",
+   "title": "Первый день на работе",
+   "oop": {
+    "кат": "name"
+   },
+   "sentences": [
+    [
+     "Я Катя, и сегодня мой первый день на новой работе.",
+     "I'm Katya, and today is my first day at a new job."
+    ],
+    [
+     "Я работаю в большом магазине в центре.",
+     "I work in a big shop in the centre."
+    ],
+    [
+     "В восемь часов утра я еду туда на автобусе.",
+     "At eight in the morning I go there by bus."
+    ],
+    [
+     "Мой начальник — молодой мужчина, его зовут Андрей.",
+     "My boss is a young man, his name is Andrey."
+    ],
+    [
+     "Он показывает мне магазин и говорит, что нужно делать.",
+     "He shows me the shop and tells me what I need to do."
+    ],
+    [
+     "Люди в команде добрые и помогают мне.",
+     "The people in the team are kind and help me."
+    ],
+    [
+     "Днём мы вместе едим на кухне.",
+     "In the afternoon we eat together in the kitchen."
+    ],
+    [
+     "Работа трудная, но интересная.",
+     "The work is hard but interesting."
+    ],
+    [
+     "Вечером я говорю маме: «Мне нравится моя новая работа!»",
+     "In the evening I tell Mum: \"I like my new job!\""
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Как Катя едет на работу?",
+     "en": "How does Katya get to work?",
+     "type": "mc",
+     "options": [
+      "На метро",
+      "На автобусе",
+      "На машине",
+      "На поезде"
+     ],
+     "answer": 1,
+     "words": [
+      "автобус"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Начальник — старый мужчина.",
+     "en": "The boss is an old man.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "молодой",
+      "мужчина"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Кто помогает на работе?",
+     "en": "Who helps at work?",
+     "type": "mc",
+     "options": [
+      "Мама",
+      "Никто",
+      "Её друг из школы",
+      "Люди в команде"
+     ],
+     "answer": 3,
+     "words": [
+      "помогать"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Кате не интересно на работе.",
+     "en": "Katya finds the work boring.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "работа",
+      "интересный"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0015",
+   "lv": "A1",
+   "title": "Где метро?",
+   "oop": {},
+   "sentences": [
+    [
+     "На улице молодая девушка спрашивает старого мужчину.",
+     "On the street a young woman asks an old man."
+    ],
+    [
+     "— Извините, вы не знаете, где здесь метро?",
+     "\"Excuse me, do you know where the metro is around here?\""
+    ],
+    [
+     "— Метро? Это рядом.",
+     "\"The metro? It's close.\""
+    ],
+    [
+     "Идите прямо по этой улице, и вы увидите парк.",
+     "Go straight along this street and you will see a park."
+    ],
+    [
+     "Потом будет большой белый дом, там магазин.",
+     "Then there will be a big white building with a shop in it."
+    ],
+    [
+     "Метро на другой стороне улицы.",
+     "The metro is on the other side of the street."
+    ],
+    [
+     "— Это долго?",
+     "\"Does it take long?\""
+    ],
+    [
+     "— Нет, пять или шесть минут.",
+     "\"No, five or six minutes.\""
+    ],
+    [
+     "— Большое спасибо! А где можно купить билет?",
+     "\"Thank you very much! And where can I buy a ticket?\""
+    ],
+    [
+     "— Билет можно купить в метро или по телефону.",
+     "\"You can buy a ticket in the metro or on your phone.\""
+    ],
+    [
+     "— Спасибо, вы очень помогли!",
+     "\"Thank you, you've been very helpful!\""
+    ],
+    [
+     "— Не за что. Хорошего дня!",
+     "\"You're welcome. Have a good day!\""
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Метро находится близко.",
+     "en": "The metro is close by.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "метро",
+      "рядом"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Что девушка увидит на улице?",
+     "en": "What will the woman see on the street?",
+     "type": "mc",
+     "options": [
+      "Реку",
+      "Школу",
+      "Парк",
+      "Больницу"
+     ],
+     "answer": 2,
+     "words": [
+      "увидеть",
+      "парк"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Где находится метро?",
+     "en": "Where is the metro?",
+     "type": "mc",
+     "options": [
+      "На другой стороне улицы",
+      "Рядом с парком, в белом доме",
+      "В парке",
+      "В магазине"
+     ],
+     "answer": 0,
+     "words": [
+      "сторона",
+      "улица"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "До метро нужно идти тридцать минут.",
+     "en": "It takes thirty minutes to walk to the metro.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "минута"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "Где можно купить билет?",
+     "en": "Where can you buy a ticket?",
+     "type": "mc",
+     "options": [
+      "В парке",
+      "В магазине",
+      "В белом доме",
+      "В метро"
+     ],
+     "answer": 3,
+     "words": [
+      "купить",
+      "билет"
+     ],
+     "sentence": 9
+    }
+   ]
+  },
+  {
+   "id": "p0016",
+   "lv": "A1",
+   "title": "Письмо другу",
+   "oop": {},
+   "sentences": [
+    [
+     "Привет, Том!",
+     "Hi, Tom!"
+    ],
+    [
+     "Как ты? У меня всё хорошо.",
+     "How are you? Everything is fine with me."
+    ],
+    [
+     "Сейчас я живу в Москве и учусь в университете.",
+     "Now I live in Moscow and study at university."
+    ],
+    [
+     "Город очень большой и красивый.",
+     "The city is very big and beautiful."
+    ],
+    [
+     "Я изучаю русский язык каждый день, и это трудно.",
+     "I study Russian every day, and it is hard."
+    ],
+    [
+     "Мой учитель говорит со мной только на русском языке.",
+     "My teacher speaks to me only in Russian."
+    ],
+    [
+     "В субботу я гуляю по центру, смотрю на старые дома и иду в ресторан.",
+     "On Saturday I walk around the centre, look at the old buildings and go to a restaurant."
+    ],
+    [
+     "Здесь уже холодно, и скоро будет снег.",
+     "It is already cold here, and soon there will be snow."
+    ],
+    [
+     "Пиши мне! Когда ты приедешь?",
+     "Write to me! When will you come?"
+    ],
+    [
+     "Твой друг Марк.",
+     "Your friend Mark."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Где сейчас живёт Марк?",
+     "en": "Where does Mark live now?",
+     "type": "mc",
+     "options": [
+      "В Лондоне",
+      "В Москве",
+      "В другом городе",
+      "У Тома"
+     ],
+     "answer": 1,
+     "words": [
+      "жить"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Изучать русский язык Марку не трудно.",
+     "en": "Learning Russian is not hard for Mark.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "изучать",
+      "язык"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "Как говорит учитель Марка?",
+     "en": "How does Mark's teacher speak?",
+     "type": "mc",
+     "options": [
+      "Только на английском",
+      "Очень быстро",
+      "Очень мало",
+      "Только на русском"
+     ],
+     "answer": 3,
+     "words": [
+      "учитель",
+      "говорить"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "По субботам Марк гуляет в центре города.",
+     "en": "On Saturdays Mark walks in the city centre.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "суббота",
+      "центр"
+     ],
+     "sentence": 6
+    }
+   ]
+  },
+  {
+   "id": "p0017",
+   "lv": "A1",
+   "title": "Чай с яблоком",
+   "oop": {
+    "разрезать": "recipe step (cut)"
+   },
+   "sentences": [
+    [
+     "Это вкусный чай для холодного дня.",
+     "This is a tasty tea for a cold day."
+    ],
+    [
+     "Вам нужно: вода, чёрный чай, одно яблоко и немного сахара.",
+     "You need: water, black tea, one apple and a little sugar."
+    ],
+    [
+     "Поставьте воду на огонь.",
+     "Put the water on the heat."
+    ],
+    [
+     "Потом возьмите яблоко и разрежьте его на маленькие части.",
+     "Then take the apple and cut it into small pieces."
+    ],
+    [
+     "Когда вода станет горячей, положите в неё чай и яблоко.",
+     "When the water gets hot, put the tea and the apple into it."
+    ],
+    [
+     "Ждите пять минут.",
+     "Wait five minutes."
+    ],
+    [
+     "Если вы любите чай с сахаром, положите немного сахара.",
+     "If you like tea with sugar, add a little sugar."
+    ],
+    [
+     "Можно пить такой чай и с молоком, но с яблоком лучше.",
+     "You can drink this tea with milk too, but it is better with the apple."
+    ],
+    [
+     "Этот чай любят и дети, и родители.",
+     "Both children and parents love this tea."
+    ],
+    [
+     "Пейте его горячим, и вам всегда будет хорошо!",
+     "Drink it hot and you will always feel good!"
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Сколько яблок нужно?",
+     "en": "How many apples are needed?",
+     "type": "mc",
+     "options": [
+      "Два",
+      "Три",
+      "Одно",
+      "Пять"
+     ],
+     "answer": 2,
+     "words": [
+      "яблоко"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Нужно ждать десять минут.",
+     "en": "You need to wait ten minutes.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "ждать",
+      "минута"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Когда нужно положить сахар?",
+     "en": "When should you add sugar?",
+     "type": "mc",
+     "options": [
+      "Если любишь чай с сахаром",
+      "Если чай очень горячий и чёрный",
+      "Если нет яблока",
+      "Если нет молока"
+     ],
+     "answer": 0,
+     "words": [
+      "сахар"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "Этот чай нравится детям.",
+     "en": "Children like this tea.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "ребёнок"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0018",
+   "lv": "A1",
+   "title": "Студент из Китая",
+   "oop": {
+    "ван": "name"
+   },
+   "sentences": [
+    [
+     "Ван — студент из Китая.",
+     "Wang is a student from China."
+    ],
+    [
+     "Он живёт в Москве уже два месяца.",
+     "He has been living in Moscow for two months already."
+    ],
+    [
+     "Каждый день у него урок русского языка.",
+     "Every day he has a Russian lesson."
+    ],
+    [
+     "На уроке студенты читают, пишут и много говорят.",
+     "In class the students read, write and speak a lot."
+    ],
+    [
+     "Учитель у них молодой и очень хороший.",
+     "Their teacher is young and very good."
+    ],
+    [
+     "Ван любит русские песни и часто слушает музыку.",
+     "Wang likes Russian songs and often listens to music."
+    ],
+    [
+     "Иван, друг Вана, помогает ему с языком.",
+     "Ivan, Wang's friend, helps him with the language."
+    ],
+    [
+     "Они часто вместе пьют кофе и говорят.",
+     "They often drink coffee together and talk."
+    ],
+    [
+     "Иван тоже учится, он изучает французский язык.",
+     "Ivan is also studying, he is learning French."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Ван живёт в Москве уже год.",
+     "en": "Wang has been living in Moscow for a year already.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "жить",
+      "месяц"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Как часто у Вана урок русского?",
+     "en": "How often does Wang have a Russian lesson?",
+     "type": "mc",
+     "options": [
+      "Раз в неделю",
+      "Каждый день",
+      "Раз в месяц",
+      "Только в субботу"
+     ],
+     "answer": 1,
+     "words": [
+      "каждый",
+      "день",
+      "урок"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Что любит Ван?",
+     "en": "What does Wang like?",
+     "type": "mc",
+     "options": [
+      "Английские фильмы",
+      "Русские книги",
+      "Новые игры",
+      "Русские песни"
+     ],
+     "answer": 3,
+     "words": [
+      "песня"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Иван помогает Вану изучать русский.",
+     "en": "Ivan helps Wang learn Russian.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "друг",
+      "помогать"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "Какой язык изучает Иван?",
+     "en": "Which language is Ivan learning?",
+     "type": "mc",
+     "options": [
+      "Французский",
+      "Английский",
+      "Русский",
+      "Английский и русский"
+     ],
+     "answer": 0,
+     "words": [
+      "язык"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0019",
+   "lv": "A1",
+   "title": "Хороший ресторан",
+   "oop": {},
+   "sentences": [
+    [
+     "Вчера я был в ресторане «Солнце» на улице Пушкина.",
+     "Yesterday I was at the Solnce restaurant on Pushkin Street."
+    ],
+    [
+     "Ресторан маленький, но очень красивый.",
+     "The restaurant is small but very beautiful."
+    ],
+    [
+     "Там всегда много людей, поэтому лучше сначала позвонить.",
+     "There are always a lot of people there, so it's better to call first."
+    ],
+    [
+     "Я ел рыбу и суп, а потом было яблоко с сахаром.",
+     "I had fish and soup, and then there was an apple with sugar."
+    ],
+    [
+     "Всё было очень вкусно.",
+     "Everything was very tasty."
+    ],
+    [
+     "Девушка, которая работает там, молодая и очень добрая.",
+     "The girl who works there is young and very kind."
+    ],
+    [
+     "Ужин не очень дорогой.",
+     "Dinner is not very expensive."
+    ],
+    [
+     "Одна проблема: там нет музыки, а я её очень люблю.",
+     "One problem: there is no music there, and I love it very much."
+    ],
+    [
+     "Но я ещё приду туда с женой!",
+     "But I will come there again with my wife!"
+    ],
+    [
+     "Олег",
+     "Oleg"
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Какой ресторан «Солнце»?",
+     "en": "What is the Solnce restaurant like?",
+     "type": "mc",
+     "options": [
+      "Большой и старый",
+      "Маленький и красивый",
+      "Новый и дорогой",
+      "Большой и красивый"
+     ],
+     "answer": 1,
+     "words": [
+      "маленький",
+      "красивый"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "В ресторане всегда мало людей.",
+     "en": "There are always few people in the restaurant.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "люди"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Что ел Олег?",
+     "en": "What did Oleg eat?",
+     "type": "mc",
+     "options": [
+      "Рыбу и суп",
+      "Мясо и хлеб",
+      "Суп и сыр",
+      "Рыбу и мясо"
+     ],
+     "answer": 0,
+     "words": [
+      "рыба",
+      "суп"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "В ресторане не играет музыка.",
+     "en": "No music plays in the restaurant.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "проблема",
+      "музыка"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0020",
+   "lv": "A1",
+   "title": "Зимний вечер",
+   "oop": {},
+   "sentences": [
+    [
+     "Сейчас декабрь, и на улице идёт снег.",
+     "It is December now, and it is snowing outside."
+    ],
+    [
+     "Вечером вся семья сидит дома.",
+     "In the evening the whole family is at home."
+    ],
+    [
+     "Папа читает книгу, а мама слушает музыку.",
+     "Dad is reading a book, and Mum is listening to music."
+    ],
+    [
+     "Мой брат играет на компьютере в новую игру.",
+     "My brother is playing a new game on the computer."
+    ],
+    [
+     "Бабушка готовит горячий чай с молоком.",
+     "Grandma is making hot tea with milk."
+    ],
+    [
+     "Наша кошка спит на кровати.",
+     "Our cat is sleeping on the bed."
+    ],
+    [
+     "Я смотрю в окно: там холодно и идёт снег, а дома тепло и хорошо.",
+     "I look out of the window: it is cold and snowing there, but at home it is warm and nice."
+    ],
+    [
+     "Потом мы все вместе смотрим фильм.",
+     "Then we all watch a film together."
+    ],
+    [
+     "Я очень люблю такие вечера, когда мы все вместе.",
+     "I really love evenings like this, when we are all together."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Сейчас на улице идёт дождь.",
+     "en": "It is raining outside now.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "снег"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "Что делает мама?",
+     "en": "What is Mum doing?",
+     "type": "mc",
+     "options": [
+      "Читает книгу",
+      "Готовит чай",
+      "Смотрит фильм",
+      "Слушает музыку"
+     ],
+     "answer": 3,
+     "words": [
+      "мама",
+      "слушать",
+      "музыка"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Кто готовит чай?",
+     "en": "Who is making tea?",
+     "type": "mc",
+     "options": [
+      "Папа",
+      "Бабушка",
+      "Брат",
+      "Мама"
+     ],
+     "answer": 1,
+     "words": [
+      "бабушка",
+      "готовить"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "Кошка играет в комнате.",
+     "en": "The cat is playing in the room.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "кошка",
+      "спать"
+     ],
+     "sentence": 5
+    }
+   ]
+  },
+  {
+   "id": "p0021",
+   "lv": "A2",
+   "title": "Лето у моря",
+   "oop": {},
+   "sentences": [
+    [
+     "Прошлым летом мы с семьёй ездили на море.",
+     "Last summer my family and I went to the sea."
+    ],
+    [
+     "Мы жили в маленьком отеле рядом с морем.",
+     "We stayed in a small hotel next to the sea."
+    ],
+    [
+     "Каждое утро мы пили кофе на улице, а потом шли к воде.",
+     "Every morning we drank coffee outside and then went to the water."
+    ],
+    [
+     "Вода была тёплая и чистая, и дети играли в ней весь день.",
+     "The water was warm and clean, and the children played in it all day."
+    ],
+    [
+     "Муж делал много фотографий, а я читала книги.",
+     "My husband took a lot of photos, and I read books."
+    ],
+    [
+     "Однажды мы поехали в горы на автобусе.",
+     "One day we went to the mountains by bus."
+    ],
+    [
+     "Там было очень красиво, но немного холодно, и мы были рады, что взяли тёплую одежду.",
+     "It was very beautiful there, but a little cold, and we were glad we had brought warm clothes."
+    ],
+    [
+     "Вечером мы гуляли по городу, ели рыбу в ресторане и слушали музыку.",
+     "In the evening we walked around the town, ate fish in a restaurant and listened to music."
+    ],
+    [
+     "Мой сын говорит, что это был лучший отдых в его жизни.",
+     "My son says it was the best holiday of his life."
+    ],
+    [
+     "В следующем году мы хотим поехать туда снова.",
+     "Next year we want to go there again."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Где жила семья?",
+     "en": "Where did the family stay?",
+     "type": "mc",
+     "options": [
+      "В большом доме у реки",
+      "В маленьком отеле",
+      "У бабушки в деревне",
+      "В квартире в центре"
+     ],
+     "answer": 1,
+     "words": [
+      "жить",
+      "отель"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Вода в море была холодная.",
+     "en": "The water in the sea was cold.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "вода"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Как семья ехала в горы?",
+     "en": "How did the family travel to the mountains?",
+     "type": "mc",
+     "options": [
+      "На поезде",
+      "На машине",
+      "На автобусе",
+      "На самолёте"
+     ],
+     "answer": 2,
+     "words": [
+      "автобус"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Вечером семья ела в ресторане.",
+     "en": "In the evening the family ate in a restaurant.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "рыба",
+      "ресторан"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "Что семья хочет сделать в следующем году?",
+     "en": "What does the family want to do next year?",
+     "type": "mc",
+     "options": [
+      "Снова поехать на море",
+      "Поехать в другую страну",
+      "Остаться дома",
+      "Купить новый дом"
+     ],
+     "answer": 0,
+     "words": [
+      "следующий",
+      "год"
+     ],
+     "sentence": 9
+    }
+   ]
+  },
+  {
+   "id": "p0022",
+   "lv": "A2",
+   "title": "Объявление для жителей",
+   "oop": {},
+   "sentences": [
+    [
+     "Дорогие жители дома номер пять!",
+     "Dear residents of building number five!"
+    ],
+    [
+     "В понедельник в доме не будет горячей воды с девяти часов утра до шести часов вечера.",
+     "On Monday there will be no hot water in the building from nine in the morning to six in the evening."
+    ],
+    [
+     "В доме будет ремонт.",
+     "There will be repair work in the building."
+    ],
+    [
+     "Пожалуйста, приготовьте воду в воскресенье вечером.",
+     "Please store up water on Sunday evening."
+    ],
+    [
+     "Если у вас есть вопросы, звоните по телефону, который вы найдёте на двери.",
+     "If you have questions, call the number you will find on the door."
+    ],
+    [
+     "Также в субботу в семь часов вечера в нашем доме будет общее собрание.",
+     "Also, on Saturday at seven in the evening there will be a general meeting in our building."
+    ],
+    [
+     "Мы будем говорить о новом парке рядом с домом и о машинах на улице.",
+     "We will talk about the new park next to the building and about cars in the street."
+    ],
+    [
+     "Многие жители говорят, что машин стало слишком много и детям опасно играть.",
+     "Many residents say there are too many cars now and it is dangerous for children to play."
+    ],
+    [
+     "Приходите, ваше мнение очень важно для нас!",
+     "Come, your opinion is very important to us!"
+    ],
+    [
+     "Спасибо и хорошего дня!",
+     "Thank you and have a good day!"
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Чего не будет в понедельник?",
+     "en": "What will there not be on Monday?",
+     "type": "mc",
+     "options": [
+      "Света",
+      "Газа",
+      "Холодной воды",
+      "Горячей воды"
+     ],
+     "answer": 3,
+     "words": [
+      "горячий",
+      "вода"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Воды не будет только утром.",
+     "en": "There will be no water only in the morning.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "вода",
+      "утро"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Почему не будет воды?",
+     "en": "Why will there be no water?",
+     "type": "mc",
+     "options": [
+      "Будет ремонт",
+      "Будет собрание",
+      "Нет денег",
+      "Все уехали"
+     ],
+     "answer": 0,
+     "words": [
+      "ремонт"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "В субботу жители встретятся в доме.",
+     "en": "On Saturday the residents will meet in the building.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "собрание",
+      "суббота"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Что не нравится жителям?",
+     "en": "What don't the residents like?",
+     "type": "mc",
+     "options": [
+      "Нет горячей воды",
+      "Слишком много машин",
+      "Парк находится очень далеко от дома",
+      "Нет магазина рядом"
+     ],
+     "answer": 1,
+     "words": [
+      "машина"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0023",
+   "lv": "A2",
+   "title": "Письмо от Кати",
+   "oop": {},
+   "sentences": [
+    [
+     "Привет, Лена!",
+     "Hi, Lena!"
+    ],
+    [
+     "Прости, что долго не писала.",
+     "Sorry I haven't written for so long."
+    ],
+    [
+     "В сентябре я начала работать в новой компании, и у меня совсем не было времени.",
+     "In September I started working at a new company, and I had no time at all."
+    ],
+    [
+     "Работа интересная, но трудная, и я часто прихожу домой поздно.",
+     "The work is interesting but hard, and I often come home late."
+    ],
+    [
+     "Мой начальник — хороший человек, он всегда помогает, если я что-то не понимаю.",
+     "My boss is a good person, he always helps if I don't understand something."
+    ],
+    [
+     "А ещё у меня новость: я наконец купила машину!",
+     "And I have news: I finally bought a car!"
+    ],
+    [
+     "Теперь я езжу на работу за двадцать минут, а раньше ехала почти час на автобусе.",
+     "Now I get to work in twenty minutes, and before it took almost an hour by bus."
+    ],
+    [
+     "Машина не новая, но красивая и в хорошем состоянии.",
+     "The car is not new, but it's nice and in good condition."
+    ],
+    [
+     "Как ты? Как дела в университете?",
+     "How are you? How are things at university?"
+    ],
+    [
+     "Может быть, встретимся в субботу и поговорим?",
+     "Maybe we can meet on Saturday and talk?"
+    ],
+    [
+     "Пиши, я очень жду!",
+     "Write, I'm really waiting!"
+    ],
+    [
+     "Твоя Катя",
+     "Your Katya"
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Катя давно не писала Лене.",
+     "en": "Katya hasn't written to Lena for a long time.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "долго",
+      "писать"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Что случилось в сентябре?",
+     "en": "What happened in September?",
+     "type": "mc",
+     "options": [
+      "Катя купила дом",
+      "Катя начала учиться",
+      "Катя начала новую работу",
+      "Катя поехала отдыхать на море"
+     ],
+     "answer": 2,
+     "words": [
+      "начать",
+      "работать"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Начальник Кати никогда не помогает.",
+     "en": "Katya's boss never helps.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "начальник",
+      "помогать"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "Сколько времени Катя едет на работу теперь?",
+     "en": "How long does it take Katya to get to work now?",
+     "type": "mc",
+     "options": [
+      "Двадцать минут",
+      "Почти час",
+      "Десять минут",
+      "Больше часа"
+     ],
+     "answer": 0,
+     "words": [
+      "минута"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "Что предлагает Катя?",
+     "en": "What does Katya suggest?",
+     "type": "mc",
+     "options": [
+      "Позвонить в пятницу",
+      "Поехать вместе на море",
+      "Написать новое письмо",
+      "Встретиться в субботу"
+     ],
+     "answer": 3,
+     "words": [
+      "встретиться",
+      "суббота"
+     ],
+     "sentence": 9
+    }
+   ]
+  },
+  {
+   "id": "p0024",
+   "lv": "A2",
+   "title": "У врача",
+   "oop": {},
+   "sentences": [
+    [
+     "— Здравствуйте, доктор.",
+     "\"Hello, doctor.\""
+    ],
+    [
+     "— Здравствуйте! Что у вас случилось?",
+     "\"Hello! What's the matter?\""
+    ],
+    [
+     "— У меня уже три дня болит голова, и мне трудно спать.",
+     "\"I've had a headache for three days already, and it's hard for me to sleep.\""
+    ],
+    [
+     "— Вы много работаете за компьютером?",
+     "\"Do you work a lot at the computer?\""
+    ],
+    [
+     "— Да, по десять часов в день, иногда больше.",
+     "\"Yes, ten hours a day, sometimes more.\""
+    ],
+    [
+     "— Понятно. Вам нужно больше отдыхать и меньше сидеть за компьютером.",
+     "\"I see. You need to rest more and sit at the computer less.\""
+    ],
+    [
+     "Каждый час нужно отдыхать пять минут: можно выпить воды или посмотреть в окно.",
+     "Every hour you should rest for five minutes: you can drink some water or look out of the window."
+    ],
+    [
+     "Пейте больше воды, меньше кофе и гуляйте вечером в парке.",
+     "Drink more water, less coffee, and walk in the park in the evening."
+    ],
+    [
+     "Идите спать до одиннадцати часов.",
+     "Go to bed before eleven o'clock."
+    ],
+    [
+     "Если через неделю голова ещё будет болеть, приходите снова.",
+     "If your head still hurts in a week, come again."
+    ],
+    [
+     "— Большое спасибо, доктор! Я попробую, но это будет трудно, потому что у меня сейчас очень много работы.",
+     "\"Thank you very much, doctor! I'll try, but it will be hard, because I have a lot of work right now.\""
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Что болит у человека?",
+     "en": "What hurts?",
+     "type": "mc",
+     "options": [
+      "Нога",
+      "Голова",
+      "Спина",
+      "Рука"
+     ],
+     "answer": 1,
+     "words": [
+      "голова"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Человек работает за компьютером два часа в день.",
+     "en": "The person works at the computer two hours a day.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "час",
+      "день"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "Что говорит врач?",
+     "en": "What does the doctor say?",
+     "type": "mc",
+     "options": [
+      "Нужно больше работать",
+      "Нужно меньше спать",
+      "Нужно больше отдыхать",
+      "Нужно меньше гулять"
+     ],
+     "answer": 2,
+     "words": [
+      "отдыхать"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Врач говорит, что кофе нужно пить меньше.",
+     "en": "The doctor says that one should drink less coffee.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "пить",
+      "кофе"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "Когда нужно прийти снова?",
+     "en": "When should the person come again?",
+     "type": "mc",
+     "options": [
+      "Если через неделю не будет лучше",
+      "Завтра утром",
+      "Через месяц",
+      "Когда голова совсем не будет болеть"
+     ],
+     "answer": 0,
+     "words": [
+      "неделя"
+     ],
+     "sentence": 9
+    }
+   ]
+  },
+  {
+   "id": "p0025",
+   "lv": "A2",
+   "title": "Новый район",
+   "oop": {},
+   "sentences": [
+    [
+     "Я Марина, и в прошлом месяце мы переехали в новый район на другой стороне города.",
+     "I'm Marina, and last month we moved to a new district on the other side of the city."
+    ],
+    [
+     "Сначала мне здесь не нравилось: всё было новое, и я никого не знала.",
+     "At first I didn't like it here: everything was new, and I didn't know anyone."
+    ],
+    [
+     "Но скоро всё изменилось.",
+     "But soon everything changed."
+    ],
+    [
+     "Рядом с домом есть большой парк, где я гуляю с собакой каждое утро.",
+     "Next to the house there is a big park where I walk the dog every morning."
+    ],
+    [
+     "Там я познакомилась с женщиной, у которой тоже есть собака.",
+     "There I met a woman who also has a dog."
+    ],
+    [
+     "Её зовут Ирина, и теперь мы часто пьём кофе вместе.",
+     "Her name is Irina, and now we often drink coffee together."
+    ],
+    [
+     "В районе много магазинов, есть хорошая школа и станция метро.",
+     "There are lots of shops in the district, a good school and a metro station."
+    ],
+    [
+     "Дети быстро нашли новых друзей и уже не хотят в старый район.",
+     "The children quickly found new friends and no longer want to go back to the old district."
+    ],
+    [
+     "Единственная проблема — до работы теперь ехать почти час.",
+     "The only problem is that it now takes almost an hour to get to work."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Сначала Марине было трудно в новом районе.",
+     "en": "At first Marina found it hard in the new district.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "сначала",
+      "нравиться"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Что Марина делает каждое утро?",
+     "en": "What does Marina do every morning?",
+     "type": "mc",
+     "options": [
+      "Ездит на работу",
+      "Пьёт кофе дома",
+      "Ходит в магазин у дома за хлебом",
+      "Гуляет в парке с собакой"
+     ],
+     "answer": 3,
+     "words": [
+      "парк",
+      "собака"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "С кем Марина познакомилась в парке?",
+     "en": "Whom did Marina meet in the park?",
+     "type": "mc",
+     "options": [
+      "С новым соседом по дому",
+      "С женщиной с собакой",
+      "С учителем из школы",
+      "С девушкой из магазина"
+     ],
+     "answer": 1,
+     "words": [
+      "познакомиться",
+      "женщина"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "Дети ещё не нашли друзей.",
+     "en": "The children have not found friends yet.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "ребёнок",
+      "друг"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "Какая проблема у нового района?",
+     "en": "What is the problem with the new district?",
+     "type": "mc",
+     "options": [
+      "Нет метро",
+      "Нет магазинов",
+      "Далеко до работы",
+      "Плохая школа"
+     ],
+     "answer": 2,
+     "words": [
+      "проблема"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0026",
+   "lv": "A2",
+   "title": "Как я учил русский",
+   "oop": {},
+   "sentences": [
+    [
+     "Меня зовут Джон, я из Лондона.",
+     "My name is John, I'm from London."
+    ],
+    [
+     "Три года назад я начал изучать русский язык.",
+     "Three years ago I started learning Russian."
+    ],
+    [
+     "Сначала было очень трудно: всё было новое, длинные слова и сложные правила.",
+     "At first it was very hard: everything was new, long words and complicated rules."
+    ],
+    [
+     "Я занимался каждый день по часу и слушал русские песни.",
+     "I studied an hour every day and listened to Russian songs."
+    ],
+    [
+     "Потом я нашёл в интернете друга из Москвы, его зовут Паша.",
+     "Then I found a friend from Moscow on the internet, his name is Pasha."
+    ],
+    [
+     "Мы разговаривали по видео два раза в неделю: сначала на русском, потом на английском.",
+     "We talked by video twice a week: first in Russian, then in English."
+    ],
+    [
+     "Это мне очень помогло.",
+     "This helped me a lot."
+    ],
+    [
+     "Прошлым летом я впервые поехал в Россию.",
+     "Last summer I went to Russia for the first time."
+    ],
+    [
+     "Я понимал почти всё, что говорили люди, и мог спокойно купить билет или заказать еду.",
+     "I understood almost everything people said and could easily buy a ticket or order food."
+    ],
+    [
+     "Паша показал мне Москву, и мы много гуляли по городу.",
+     "Pasha showed me Moscow, and we walked around the city a lot."
+    ],
+    [
+     "Теперь я хочу читать русские книги.",
+     "Now I want to read Russian books."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Когда Джон начал изучать русский?",
+     "en": "When did John start learning Russian?",
+     "type": "mc",
+     "options": [
+      "Три года назад",
+      "Прошлым летом",
+      "Год назад",
+      "Пять лет назад"
+     ],
+     "answer": 0,
+     "words": [
+      "год",
+      "назад"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Сначала русский язык был для Джона простым.",
+     "en": "At first Russian was easy for John.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "сначала"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Как часто Джон говорил с другом по видео?",
+     "en": "How often did John talk with his friend by video?",
+     "type": "mc",
+     "options": [
+      "Каждый день",
+      "Раз в месяц",
+      "Два раза в неделю",
+      "Только летом"
+     ],
+     "answer": 2,
+     "words": [
+      "разговаривать",
+      "неделя"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "До прошлого лета Джон не был в России.",
+     "en": "Before last summer John had not been to Russia.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "впервые",
+      "поехать"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "Что Джон хочет делать теперь?",
+     "en": "What does John want to do now?",
+     "type": "mc",
+     "options": [
+      "Жить в Москве",
+      "Работать учителем",
+      "Изучать ещё один новый язык",
+      "Читать русские книги"
+     ],
+     "answer": 3,
+     "words": [
+      "хотеть",
+      "читать"
+     ],
+     "sentence": 10
+    }
+   ]
+  },
+  {
+   "id": "p0027",
+   "lv": "A2",
+   "title": "Погода на выходные",
+   "oop": {},
+   "sentences": [
+    [
+     "Добрый вечер! Вот погода на субботу и воскресенье.",
+     "Good evening! Here is the weather for Saturday and Sunday."
+    ],
+    [
+     "В субботу в Москве будет холодно, а днём может пойти небольшой снег.",
+     "On Saturday it will be cold in Moscow, and in the afternoon there may be light snow."
+    ],
+    [
+     "Ночью будет ещё холоднее.",
+     "At night it will be even colder."
+    ],
+    [
+     "Ветер будет сильный, поэтому лучше остаться дома или взять тёплую одежду.",
+     "The wind will be strong, so it's better to stay at home or take warm clothes."
+    ],
+    [
+     "На дорогах будет опасно, и если можно, лучше ехать на метро.",
+     "The roads will be dangerous, and if possible it's better to go by metro."
+    ],
+    [
+     "А вот в воскресенье нас ждёт хорошая новость.",
+     "But on Sunday good news awaits us."
+    ],
+    [
+     "Утром выйдет солнце, и днём будет не так холодно.",
+     "In the morning the sun will come out, and in the afternoon it won't be so cold."
+    ],
+    [
+     "Это отличный день, чтобы гулять в парке с детьми или поехать за город.",
+     "It's an excellent day to walk in the park with the children or go out of town."
+    ],
+    [
+     "Но на следующей неделе зима не уйдёт: в понедельник снова будет снег.",
+     "But next week winter won't leave: on Monday there will be snow again."
+    ],
+    [
+     "Во вторник и среду тоже будет холодно, но без снега.",
+     "On Tuesday and Wednesday it will also be cold, but without snow."
+    ],
+    [
+     "Хорошего вечера и до завтра!",
+     "Have a good evening and see you tomorrow!"
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Какая погода будет в субботу?",
+     "en": "What will the weather be like on Saturday?",
+     "type": "mc",
+     "options": [
+      "Солнце и тёплая погода",
+      "Сильный дождь и ветер весь день",
+      "Холодно, может пойти снег",
+      "Тепло, но будет ветер"
+     ],
+     "answer": 2,
+     "words": [
+      "суббота",
+      "холодный"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "В субботу ветра почти не будет.",
+     "en": "On Saturday there will be almost no wind.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "ветер",
+      "сильный"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Почему лучше ехать на метро?",
+     "en": "Why is it better to go by metro?",
+     "type": "mc",
+     "options": [
+      "На дорогах будет опасно",
+      "Метро будет работать всю ночь",
+      "На улице будет темно",
+      "На дорогах не будет машин"
+     ],
+     "answer": 0,
+     "words": [
+      "дорога",
+      "опасный"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "В воскресенье днём будет солнце.",
+     "en": "On Sunday afternoon it will be sunny.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "солнце"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "Что будет в понедельник?",
+     "en": "What will happen on Monday?",
+     "type": "mc",
+     "options": [
+      "Будет очень тепло",
+      "Снова пойдёт снег",
+      "Выйдет солнце",
+      "Начнётся весна"
+     ],
+     "answer": 1,
+     "words": [
+      "понедельник",
+      "снег"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0028",
+   "lv": "A2",
+   "title": "Яйца с сыром",
+   "oop": {
+    "сковорода": "recipe utensil (frying pan)",
+    "перемешать": "recipe step (mix)",
+    "вылить": "recipe step (pour)"
+   },
+   "sentences": [
+    [
+     "Яйца с сыром — это простой и быстрый завтрак.",
+     "Eggs with cheese are a simple and quick breakfast."
+    ],
+    [
+     "Вам нужно: три яйца, немного молока, кусок сыра, масло и хлеб.",
+     "You need: three eggs, a little milk, a piece of cheese, butter and bread."
+    ],
+    [
+     "Сначала поставьте на огонь сковороду и положите в неё немного масла.",
+     "First put a frying pan on the heat and put a little butter in it."
+    ],
+    [
+     "Потом возьмите яйца и молоко и хорошо перемешайте.",
+     "Then take the eggs and milk and mix them well."
+    ],
+    [
+     "Когда масло станет горячим, вылейте туда яйца.",
+     "When the butter gets hot, pour in the eggs."
+    ],
+    [
+     "Огонь должен быть небольшой, или всё будет чёрным.",
+     "The heat should be low, or everything will turn black."
+    ],
+    [
+     "Через две минуты положите на яйца сыр.",
+     "After two minutes put the cheese on the eggs."
+    ],
+    [
+     "Подождите ещё три или четыре минуты, пока сыр не станет горячим.",
+     "Wait another three or four minutes until the cheese gets hot."
+    ],
+    [
+     "Готово! Ешьте яйца горячими, с хлебом и чаем.",
+     "Done! Eat the eggs hot, with bread and tea."
+    ],
+    [
+     "Мои дети очень любят такой завтрак, и я готовлю его почти каждое утро.",
+     "My children really love this breakfast, and I make it almost every morning."
+    ],
+    [
+     "Это вкусно, и на всё нужно не больше десяти минут.",
+     "It's tasty, and it all takes no more than ten minutes."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Этот завтрак можно быстро приготовить.",
+     "en": "This breakfast can be made quickly.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "простой",
+      "быстрый"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "Сколько яиц нужно?",
+     "en": "How many eggs are needed?",
+     "type": "mc",
+     "options": [
+      "Одно",
+      "Два",
+      "Пять",
+      "Три"
+     ],
+     "answer": 3,
+     "words": [
+      "яйцо"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Каким должен быть огонь?",
+     "en": "What should the heat be like?",
+     "type": "mc",
+     "options": [
+      "Очень сильным",
+      "Небольшим",
+      "Сначала сильным, потом небольшим",
+      "Огонь не нужен"
+     ],
+     "answer": 1,
+     "words": [
+      "огонь",
+      "небольшой"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Сыр нужно положить в самом начале.",
+     "en": "The cheese should be put in at the very beginning.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "минута",
+      "сыр"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "Кто очень любит этот завтрак?",
+     "en": "Who really loves this breakfast?",
+     "type": "mc",
+     "options": [
+      "Дети автора",
+      "Муж автора",
+      "Мама автора",
+      "Друзья автора"
+     ],
+     "answer": 0,
+     "words": [
+      "ребёнок",
+      "любить"
+     ],
+     "sentence": 9
+    }
+   ]
+  },
+  {
+   "id": "p0029",
+   "lv": "A2",
+   "title": "Отзыв о фильме",
+   "oop": {},
+   "sentences": [
+    [
+     "Вчера я посмотрел новый русский фильм «Дорога домой».",
+     "Yesterday I watched the new Russian film \"The Road Home\"."
+    ],
+    [
+     "Это история о мужчине, который двадцать лет жил в другой стране и решил вернуться в свой маленький город.",
+     "It's the story of a man who lived in another country for twenty years and decided to return to his small town."
+    ],
+    [
+     "Там он встречает старых друзей и понимает, что всё изменилось.",
+     "There he meets old friends and realizes that everything has changed."
+    ],
+    [
+     "Главного героя играет известный актёр, и играет он отлично.",
+     "A famous actor plays the main character, and he plays excellently."
+    ],
+    [
+     "Мне особенно понравились музыка и красивые виды природы.",
+     "I especially liked the music and the beautiful views of nature."
+    ],
+    [
+     "Но фильм слишком длинный: почти три часа.",
+     "But the film is too long: almost three hours."
+    ],
+    [
+     "В середине мне было не очень интересно, и я хотел выйти.",
+     "In the middle I wasn't very interested and wanted to leave."
+    ],
+    [
+     "Конец очень сильный, и многие люди в зале плакали.",
+     "The ending is very powerful, and many people in the hall cried."
+    ],
+    [
+     "Я думаю, что этот фильм стоит посмотреть, но лучше смотреть его на компьютере, где можно остановить фильм.",
+     "I think this film is worth seeing, but better on a computer, where you can stop the film."
+    ],
+    [
+     "Моя оценка — семь из десяти.",
+     "My rating is seven out of ten."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "О чём этот фильм?",
+     "en": "What is this film about?",
+     "type": "mc",
+     "options": [
+      "О молодой девушке в большом городе",
+      "О мужчине, который вернулся домой",
+      "О семье, которая уехала в другую страну",
+      "О друзьях, которые поехали на море"
+     ],
+     "answer": 1,
+     "words": [
+      "история",
+      "мужчина"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Главную роль играет известный человек.",
+     "en": "A famous person plays the main role.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "актёр",
+      "известный"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Что автору не понравилось?",
+     "en": "What did the reviewer not like?",
+     "type": "mc",
+     "options": [
+      "Музыка",
+      "Актёр",
+      "Фильм слишком длинный",
+      "Актёры в фильме играли плохо"
+     ],
+     "answer": 2,
+     "words": [
+      "длинный"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "В конце фильма никто в зале не плакал.",
+     "en": "At the end of the film nobody in the hall cried.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "зал",
+      "плакать"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "Какую оценку автор даёт фильму?",
+     "en": "What rating does the reviewer give the film?",
+     "type": "mc",
+     "options": [
+      "Семь из десяти",
+      "Три из десяти",
+      "Десять из десяти",
+      "Пять из десяти"
+     ],
+     "answer": 0,
+     "words": [
+      "оценка"
+     ],
+     "sentence": 9
+    }
+   ]
+  },
+  {
+   "id": "p0030",
+   "lv": "A2",
+   "title": "Потерянный телефон",
+   "oop": {},
+   "sentences": [
+    [
+     "В пятницу вечером Максим ехал домой на автобусе.",
+     "On Friday evening Maxim was going home by bus."
+    ],
+    [
+     "Он очень устал и почти спал.",
+     "He was very tired and almost asleep."
+    ],
+    [
+     "Когда он пришёл домой, он понял, что у него нет телефона.",
+     "When he got home, he realized that he didn't have his phone."
+    ],
+    [
+     "Максим сразу позвонил на свой номер с телефона жены.",
+     "Maxim immediately called his number from his wife's phone."
+    ],
+    [
+     "Сначала никто не отвечал, и Максим очень волновался: в телефоне были все его фотографии и документы для работы.",
+     "At first nobody answered, and Maxim was very worried: all his photos and work documents were on the phone."
+    ],
+    [
+     "Через час ему ответила женщина.",
+     "An hour later a woman answered him."
+    ],
+    [
+     "Она сказала, что нашла телефон в автобусе, на месте рядом с окном.",
+     "She said she had found the phone on the bus, on a seat next to the window."
+    ],
+    [
+     "Они договорились встретиться утром у станции метро.",
+     "They agreed to meet in the morning at the metro station."
+    ],
+    [
+     "Максим купил ей цветы и сказал большое спасибо.",
+     "Maxim bought her flowers and said a big thank you."
+    ],
+    [
+     "Теперь он всегда смотрит, всё ли у него есть, когда выходит из автобуса.",
+     "Now he always looks to see whether he has everything when he gets off the bus."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Максим был полон сил.",
+     "en": "Maxim was full of energy.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "устать"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "С какого телефона звонил Максим?",
+     "en": "Whose phone did Maxim call from?",
+     "type": "mc",
+     "options": [
+      "С телефона друга",
+      "С рабочего телефона",
+      "С телефона в автобусе",
+      "С телефона жены"
+     ],
+     "answer": 3,
+     "words": [
+      "позвонить",
+      "жена"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Где женщина нашла телефон?",
+     "en": "Where did the woman find the phone?",
+     "type": "mc",
+     "options": [
+      "В автобусе",
+      "В метро",
+      "На улице",
+      "В магазине"
+     ],
+     "answer": 0,
+     "words": [
+      "найти",
+      "автобус"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "Максим и женщина встретились около метро.",
+     "en": "Maxim and the woman met near the metro.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "встретиться",
+      "станция"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "Что Максим подарил женщине?",
+     "en": "What did Maxim give the woman?",
+     "type": "mc",
+     "options": [
+      "Деньги",
+      "Цветы",
+      "Книгу",
+      "Телефон"
+     ],
+     "answer": 1,
+     "words": [
+      "купить",
+      "цветок"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0031",
+   "lv": "A2",
+   "title": "Наша команда",
+   "oop": {},
+   "sentences": [
+    [
+     "Мой сын Даня играет в футбол с восьми лет.",
+     "My son Danya has been playing football since he was eight."
+    ],
+    [
+     "Сейчас ему двенадцать, и он играет в детской команде нашего района.",
+     "Now he's twelve, and he plays in our district's children's team."
+    ],
+    [
+     "Тренер у них молодой, но очень серьёзный.",
+     "Their coach is young but very serious."
+    ],
+    [
+     "Три раза в неделю после школы Даня ездит на футбол.",
+     "Three times a week after school Danya goes to football."
+    ],
+    [
+     "В прошлое воскресенье у команды был важный матч с сильным клубом из центра города.",
+     "Last Sunday the team had an important match against a strong club from the city centre."
+    ],
+    [
+     "Мы с мужем тоже пришли посмотреть и сидели рядом с другими родителями.",
+     "My husband and I also came to watch and sat next to the other parents."
+    ],
+    [
+     "Первую половину наша команда играла плохо, и счёт был ноль — два.",
+     "In the first half our team played badly, and the score was nil–two."
+    ],
+    [
+     "Но во второй половине Даня забил, а потом ещё раз!",
+     "But in the second half Danya scored, and then again!"
+    ],
+    [
+     "Команда победила со счётом три — два.",
+     "The team won three–two."
+    ],
+    [
+     "Вечером мы пошли в ресторан, чтобы отметить победу.",
+     "In the evening we went to a restaurant to celebrate the victory."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Где играет Даня?",
+     "en": "Where does Danya play?",
+     "type": "mc",
+     "options": [
+      "В команде школы",
+      "В клубе из центра",
+      "В команде района",
+      "В команде города"
+     ],
+     "answer": 2,
+     "words": [
+      "команда"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Даня ездит на футбол не каждый день.",
+     "en": "Danya does not go to football every day.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "неделя"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "В первой половине команда Дани играла отлично.",
+     "en": "In the first half Danya's team played excellently.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "половина",
+      "играть"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "Когда Даня забил?",
+     "en": "When did Danya score?",
+     "type": "mc",
+     "options": [
+      "Во второй половине",
+      "В первой половине",
+      "В конце первой половины",
+      "Он ни разу не забил"
+     ],
+     "answer": 0,
+     "words": [
+      "второй",
+      "половина"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "Что семья сделала вечером?",
+     "en": "What did the family do in the evening?",
+     "type": "mc",
+     "options": [
+      "Поехала домой спать",
+      "Поехала к бабушке в другой район",
+      "Пошла на футбол",
+      "Отметила победу в ресторане"
+     ],
+     "answer": 3,
+     "words": [
+      "победа"
+     ],
+     "sentence": 9
+    }
+   ]
+  },
+  {
+   "id": "p0032",
+   "lv": "A2",
+   "title": "Свадьба сестры",
+   "oop": {},
+   "sentences": [
+    [
+     "В субботу у моей старшей сестры Ани была свадьба.",
+     "On Saturday my older sister Anya had her wedding."
+    ],
+    [
+     "Муж Ани, Дмитрий, — очень добрый и весёлый человек, мы все его любим.",
+     "Anya's husband Dmitry is a very kind and cheerful person, we all love him."
+    ],
+    [
+     "Свадьба была в маленьком ресторане за городом, у реки.",
+     "The wedding was in a small restaurant outside the city, by the river."
+    ],
+    [
+     "Пришло почти сто гостей: родители, друзья, люди с работы.",
+     "Almost a hundred guests came: parents, friends, people from work."
+    ],
+    [
+     "Погода была прекрасная, и весь день было солнце.",
+     "The weather was wonderful, and it was sunny all day."
+    ],
+    [
+     "Аня была в красивом белом платье, а на голове у неё были цветы.",
+     "Anya was in a beautiful white dress, and she had flowers in her hair."
+    ],
+    [
+     "Мой папа говорил об Ане и даже немного плакал.",
+     "My dad spoke about Anya and even cried a little."
+    ],
+    [
+     "Потом все танцевали и пели до самой ночи.",
+     "Then everyone danced and sang right until night."
+    ],
+    [
+     "А мой подарок — картина, которую я написала сама.",
+     "And my present was a painting that I had painted myself."
+    ],
+    [
+     "Это был один из самых счастливых дней в жизни нашей семьи.",
+     "It was one of the happiest days in our family's life."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Где была свадьба?",
+     "en": "Where was the wedding?",
+     "type": "mc",
+     "options": [
+      "В большом ресторане в центре",
+      "В ресторане за городом",
+      "Дома у родителей",
+      "В парке в городе"
+     ],
+     "answer": 1,
+     "words": [
+      "ресторан",
+      "река"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "На свадьбе было мало гостей.",
+     "en": "There were few guests at the wedding.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "гость"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Что сделал папа?",
+     "en": "What did Dad do?",
+     "type": "mc",
+     "options": [
+      "Пел песню",
+      "Танцевал весь вечер",
+      "Подарил картину",
+      "Говорил о дочери и плакал"
+     ],
+     "answer": 3,
+     "words": [
+      "папа",
+      "плакать"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "Картину для Ани купили в магазине.",
+     "en": "The painting for Anya was bought in a shop.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "подарок",
+      "картина"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0033",
+   "lv": "A2",
+   "title": "Собеседование",
+   "oop": {
+    "собеседование": "job interview (topic)",
+    "ольге": "name",
+    "ольга": "name"
+   },
+   "sentences": [
+    [
+     "Вчера у Ольги было собеседование в большой компании.",
+     "Yesterday Olga had a job interview at a big company."
+    ],
+    [
+     "— Добрый день! Расскажите, пожалуйста, немного о себе.",
+     "\"Good afternoon! Please tell us a little about yourself.\""
+    ],
+    [
+     "— Меня зовут Ольга, мне двадцать шесть лет.",
+     "\"My name is Olga, I'm twenty-six.\""
+    ],
+    [
+     "Я училась в университете в Казани, а потом три года работала в банке.",
+     "I studied at university in Kazan, and then worked at a bank for three years."
+    ],
+    [
+     "— Почему вы хотите работать у нас?",
+     "\"Why do you want to work for us?\""
+    ],
+    [
+     "— Мне интересна ваша компания, и я хочу делать что-то новое.",
+     "\"I'm interested in your company, and I want to do something new.\""
+    ],
+    [
+     "Я хорошо знаю английский язык и быстро всё понимаю.",
+     "I know English well and understand everything quickly."
+    ],
+    [
+     "— Вы готовы иногда работать в выходные?",
+     "\"Are you ready to work at the weekend sometimes?\""
+    ],
+    [
+     "— Да, если это нужно, без проблем.",
+     "\"Yes, if it's necessary, no problem.\""
+    ],
+    [
+     "— Хорошо. Мы позвоним вам до конца недели.",
+     "\"Good. We will call you before the end of the week.\""
+    ],
+    [
+     "Сегодня утром Ольге позвонили и сказали, что она получила работу!",
+     "This morning Olga got a call and was told that she had got the job!"
+    ],
+    [
+     "Она сразу позвонила маме, и вечером они вместе пошли в ресторан.",
+     "She immediately called her mum, and in the evening they went to a restaurant together."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Ольге тридцать лет.",
+     "en": "Olga is thirty years old.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "год"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Где Ольга работала раньше?",
+     "en": "Where did Olga work before?",
+     "type": "mc",
+     "options": [
+      "В банке",
+      "В университете",
+      "В школе",
+      "В большой компании"
+     ],
+     "answer": 0,
+     "words": [
+      "работать",
+      "банк"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Ольга может работать в выходные.",
+     "en": "Olga can work at the weekend.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "работать",
+      "выходной"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "Что Ольга узнала сегодня утром?",
+     "en": "What did Olga learn this morning?",
+     "type": "mc",
+     "options": [
+      "Что ей нужно прийти ещё раз",
+      "Что работу получил другой человек",
+      "Что она получила работу",
+      "Что она не получила работу"
+     ],
+     "answer": 2,
+     "words": [
+      "получить",
+      "работа"
+     ],
+     "sentence": 10
+    }
+   ]
+  },
+  {
+   "id": "p0034",
+   "lv": "A2",
+   "title": "Вечер в театре",
+   "oop": {
+    "спектакль": "theatre play (topic)"
+   },
+   "sentences": [
+    [
+     "На прошлой неделе мы с подругой были в театре.",
+     "Last week my friend and I went to the theatre."
+    ],
+    [
+     "Билеты мне подарила мама на день рождения.",
+     "Mum gave me the tickets for my birthday."
+    ],
+    [
+     "Мы давно не были в театре, поэтому очень ждали этот вечер.",
+     "We hadn't been to the theatre for a long time, so we were really looking forward to this evening."
+    ],
+    [
+     "Театр находится в самом центре города, в старом красивом здании.",
+     "The theatre is in the very centre of the city, in a beautiful old building."
+    ],
+    [
+     "Мы пришли на тридцать минут раньше и успели выпить кофе.",
+     "We arrived thirty minutes early and had time to drink a coffee."
+    ],
+    [
+     "Спектакль был о любви двух молодых людей из разных семей.",
+     "The play was about the love of two young people from different families."
+    ],
+    [
+     "Актёры играли прекрасно, а музыка была очень красивой.",
+     "The actors played wonderfully, and the music was very beautiful."
+    ],
+    [
+     "Моя подруга даже плакала в конце.",
+     "My friend even cried at the end."
+    ],
+    [
+     "После театра мы долго гуляли и говорили о том, что видели.",
+     "After the theatre we walked for a long time and talked about what we had seen."
+    ],
+    [
+     "Мы решили, что будем ходить в театр хотя бы раз в месяц.",
+     "We decided that we would go to the theatre at least once a month."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Билеты в театр были подарком.",
+     "en": "The theatre tickets were a present.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "билет",
+      "мама"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Где находится театр?",
+     "en": "Where is the theatre?",
+     "type": "mc",
+     "options": [
+      "В новом районе",
+      "Рядом с университетом",
+      "В центре, в старом здании",
+      "Далеко от центра"
+     ],
+     "answer": 2,
+     "words": [
+      "здание"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "О чём был спектакль?",
+     "en": "What was the play about?",
+     "type": "mc",
+     "options": [
+      "О любви",
+      "О войне",
+      "О детях",
+      "О работе"
+     ],
+     "answer": 0,
+     "words": [
+      "любовь"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Подруга весь вечер смеялась.",
+     "en": "The friend laughed all evening.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "подруга",
+      "плакать"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "Что решили подруги?",
+     "en": "What did the friends decide?",
+     "type": "mc",
+     "options": [
+      "Больше никогда не ходить в театр",
+      "Купить билеты на завтра",
+      "Пойти в театр с мамой",
+      "Ходить в театр раз в месяц"
+     ],
+     "answer": 3,
+     "words": [
+      "решить",
+      "месяц"
+     ],
+     "sentence": 9
+    }
+   ]
+  },
+  {
+   "id": "p0035",
+   "lv": "A2",
+   "title": "Поездка в Петербург",
+   "oop": {
+    "зонт": "umbrella (rainy weather)"
+   },
+   "sentences": [
+    [
+     "В мае Игорь первый раз поехал в Санкт-Петербург.",
+     "In May Igor went to Saint Petersburg for the first time."
+    ],
+    [
+     "Он ехал на поезде из Москвы почти четыре часа.",
+     "He travelled by train from Moscow for almost four hours."
+    ],
+    [
+     "В поезде было удобно, и он смотрел в окно и читал.",
+     "The train was comfortable, and he looked out of the window and read."
+    ],
+    [
+     "Игорь жил в небольшом отеле рядом с главной улицей города.",
+     "Igor stayed in a small hotel near the city's main street."
+    ],
+    [
+     "Каждый день он много ходил и смотрел на старые здания, мосты и реки.",
+     "Every day he walked a lot and looked at the old buildings, bridges and rivers."
+    ],
+    [
+     "Он был в нескольких музеях, но больше всего ему понравилось просто гулять вечером у воды.",
+     "He visited several museums, but most of all he liked simply walking by the water in the evening."
+    ],
+    [
+     "Погода была разная: то солнце, то дождь, поэтому зонт был всегда с ним.",
+     "The weather was changeable: sometimes sun, sometimes rain, so he always had an umbrella with him."
+    ],
+    [
+     "В последний день он купил подарки для семьи.",
+     "On the last day he bought presents for his family."
+    ],
+    [
+     "Игорь говорит, что обязательно вернётся туда зимой.",
+     "Igor says he will definitely go back there in winter."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Как Игорь ехал в Петербург?",
+     "en": "How did Igor travel to Petersburg?",
+     "type": "mc",
+     "options": [
+      "На машине",
+      "На поезде",
+      "На самолёте",
+      "На автобусе"
+     ],
+     "answer": 1,
+     "words": [
+      "поезд"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Игорь жил у друзей.",
+     "en": "Igor stayed with friends.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "отель"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Что Игорю понравилось больше всего?",
+     "en": "What did Igor like most of all?",
+     "type": "mc",
+     "options": [
+      "Музеи",
+      "Еда в ресторанах",
+      "Поезд",
+      "Гулять вечером у воды"
+     ],
+     "answer": 3,
+     "words": [
+      "понравиться",
+      "гулять"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Иногда в Петербурге шёл дождь.",
+     "en": "Sometimes it rained in Petersburg.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "погода",
+      "дождь"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "Когда Игорь хочет вернуться?",
+     "en": "When does Igor want to go back?",
+     "type": "mc",
+     "options": [
+      "Зимой",
+      "Летом",
+      "Весной",
+      "Осенью"
+     ],
+     "answer": 0,
+     "words": [
+      "вернуться",
+      "зима"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0036",
+   "lv": "A2",
+   "title": "Мой лучший друг",
+   "oop": {
+    "артём": "name"
+   },
+   "sentences": [
+    [
+     "Моего лучшего друга зовут Артём.",
+     "My best friend's name is Artyom."
+    ],
+    [
+     "Мы познакомились в первом классе, когда нам было семь лет, и с тех пор всегда вместе.",
+     "We met in the first year of school when we were seven, and we've been together ever since."
+    ],
+    [
+     "Артём высокий, у него тёмные волосы и очень добрые глаза.",
+     "Artyom is tall, he has dark hair and very kind eyes."
+    ],
+    [
+     "Он спокойный и умный, а я, наоборот, быстро говорю и всё делаю быстро.",
+     "He is calm and clever, while I, on the contrary, talk fast and do everything quickly."
+    ],
+    [
+     "Может быть, поэтому нам так интересно вместе.",
+     "Maybe that's why we find each other so interesting."
+    ],
+    [
+     "Сейчас Артём учится на врача в другом городе.",
+     "Now Artyom is studying to be a doctor in another city."
+    ],
+    [
+     "Мы встречаемся не очень часто, только летом и на праздники.",
+     "We don't meet very often, only in summer and on holidays."
+    ],
+    [
+     "Но мы каждую неделю говорим по телефону, иногда по два часа!",
+     "But every week we talk on the phone, sometimes for two hours!"
+    ],
+    [
+     "Когда у меня были проблемы в семье, Артём первым приехал помочь.",
+     "When I had problems in my family, Artyom was the first to come and help."
+    ],
+    [
+     "Я знаю, что на него всегда можно рассчитывать.",
+     "I know that I can always count on him."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Когда друзья познакомились?",
+     "en": "When did the friends meet?",
+     "type": "mc",
+     "options": [
+      "В университете",
+      "Прошлым летом",
+      "В первом классе",
+      "На работе"
+     ],
+     "answer": 2,
+     "words": [
+      "познакомиться",
+      "класс"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Артём говорит очень быстро.",
+     "en": "Artyom talks very fast.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "спокойный",
+      "умный"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Что Артём делает сейчас?",
+     "en": "What is Artyom doing now?",
+     "type": "mc",
+     "options": [
+      "Учится на врача",
+      "Работает в школе",
+      "Живёт у друга",
+      "Учится на учителя"
+     ],
+     "answer": 0,
+     "words": [
+      "учиться",
+      "врач"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Друзья часто говорят по телефону.",
+     "en": "The friends often talk on the phone.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "неделя",
+      "телефон"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "Что сделал Артём, когда у друга были проблемы?",
+     "en": "What did Artyom do when his friend had problems?",
+     "type": "mc",
+     "options": [
+      "Позвонил через месяц",
+      "Ничего не сделал",
+      "Написал письмо",
+      "Первым приехал помочь"
+     ],
+     "answer": 3,
+     "words": [
+      "проблема",
+      "помочь"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0037",
+   "lv": "A2",
+   "title": "Сообщения в чате",
+   "oop": {
+    "вани": "name",
+    "ваня": "name"
+   },
+   "sentences": [
+    [
+     "Мама: Ваня, ты где? Уже девять часов, а тебя нет дома.",
+     "Mum: Vanya, where are you? It's already nine o'clock, and you're not home."
+    ],
+    [
+     "Ваня: Мама, прости, я у Коли. Мы делаем проект по истории.",
+     "Vanya: Mum, sorry, I'm at Kolya's. We're doing a history project."
+    ],
+    [
+     "Мама: Почему ты не позвонил? Я волновалась.",
+     "Mum: Why didn't you call? I was worried."
+    ],
+    [
+     "Ваня: У меня телефон почти не работал, я только сейчас смог написать.",
+     "Vanya: My phone was almost dead, I could only write now."
+    ],
+    [
+     "Мама: Понятно. Ты ел что-нибудь?",
+     "Mum: I see. Have you eaten anything?"
+    ],
+    [
+     "Ваня: Да, мама Коли сделала нам ужин.",
+     "Vanya: Yes, Kolya's mum made us dinner."
+    ],
+    [
+     "Мама: Хорошо. Когда будешь дома?",
+     "Mum: Good. When will you be home?"
+    ],
+    [
+     "Ваня: Через час. Папа Коли сказал, что привезёт меня на машине.",
+     "Vanya: In an hour. Kolya's dad said he would bring me by car."
+    ],
+    [
+     "Мама: Отлично. Скажи им большое спасибо от меня.",
+     "Mum: Great. Say a big thank you to them from me."
+    ],
+    [
+     "И в следующий раз обязательно пиши, если будешь поздно!",
+     "And next time be sure to write if you're going to be late!"
+    ],
+    [
+     "Ваня: Обещаю! Я тебя очень люблю.",
+     "Vanya: I promise! I love you very much."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Вани нет дома в девять часов.",
+     "en": "Vanya isn't home at nine o'clock.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "час"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "Что Ваня делает у Коли?",
+     "en": "What is Vanya doing at Kolya's?",
+     "type": "mc",
+     "options": [
+      "Смотрит фильм",
+      "Делает проект по истории",
+      "Играет с Колей на компьютере",
+      "Читает книгу"
+     ],
+     "answer": 1,
+     "words": [
+      "проект",
+      "история"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Почему Ваня не позвонил?",
+     "en": "Why didn't Vanya call?",
+     "type": "mc",
+     "options": [
+      "Он забыл",
+      "Он был занят",
+      "Он не знал номер телефона мамы",
+      "Телефон почти не работал"
+     ],
+     "answer": 3,
+     "words": [
+      "телефон",
+      "работать"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Ваня ничего не ел.",
+     "en": "Vanya hasn't eaten anything.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "мама",
+      "ужин"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Как Ваня поедет домой?",
+     "en": "How will Vanya get home?",
+     "type": "mc",
+     "options": [
+      "На метро",
+      "На автобусе",
+      "На машине с папой Коли",
+      "На такси"
+     ],
+     "answer": 2,
+     "words": [
+      "папа",
+      "машина"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0038",
+   "lv": "A2",
+   "title": "Гости на ужин",
+   "oop": {},
+   "sentences": [
+    [
+     "В пятницу к нам на ужин пришли наши новые друзья, Павел и Света.",
+     "On Friday our new friends Pavel and Sveta came to us for dinner."
+    ],
+    [
+     "Мы с мужем весь день были на кухне.",
+     "My husband and I spent the whole day in the kitchen."
+    ],
+    [
+     "Я приготовила мясо и суп, а муж купил вино и цветы.",
+     "I cooked meat and soup, and my husband bought wine and flowers."
+    ],
+    [
+     "Гости пришли в семь часов и принесли нам подарок.",
+     "The guests arrived at seven o'clock and brought us a present."
+    ],
+    [
+     "Сначала всем было немного странно, но скоро разговор стал очень лёгким.",
+     "At first it felt a little strange for everyone, but soon the conversation became very easy."
+    ],
+    [
+     "Оказалось, что Павел тоже любит футбол, как мой муж, а Света работает в школе, как я.",
+     "It turned out that Pavel also likes football, like my husband, and Sveta works at a school, like me."
+    ],
+    [
+     "Мы говорили о работе, о разных странах и о детях.",
+     "We talked about work, different countries and children."
+    ],
+    [
+     "Гостям очень понравилась моя еда, особенно суп.",
+     "The guests really liked my food, especially the soup."
+    ],
+    [
+     "Они ушли только в двенадцать часов ночи.",
+     "They left only at midnight."
+    ],
+    [
+     "Они пригласили нас к себе в следующую пятницу.",
+     "They invited us to their place next Friday."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Что купил муж?",
+     "en": "What did the husband buy?",
+     "type": "mc",
+     "options": [
+      "Вино и цветы",
+      "Сыр и вино",
+      "Мясо и цветы",
+      "Хлеб и суп"
+     ],
+     "answer": 0,
+     "words": [
+      "купить",
+      "вино"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Гости пришли очень поздно.",
+     "en": "The guests arrived very late.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "гость",
+      "прийти"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Где работает Света?",
+     "en": "Where does Sveta work?",
+     "type": "mc",
+     "options": [
+      "В больнице",
+      "В магазине",
+      "В школе",
+      "В банке"
+     ],
+     "answer": 2,
+     "words": [
+      "школа",
+      "работать"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Гостям не понравился суп.",
+     "en": "The guests didn't like the soup.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "гость",
+      "понравиться"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "Что сделали гости в конце?",
+     "en": "What did the guests do at the end?",
+     "type": "mc",
+     "options": [
+      "Пригласили всех в ресторан",
+      "Пригласили друзей к себе",
+      "Принесли цветы",
+      "Остались на ночь"
+     ],
+     "answer": 1,
+     "words": [
+      "пригласить"
+     ],
+     "sentence": 9
+    }
+   ]
+  },
+  {
+   "id": "p0039",
+   "lv": "A2",
+   "title": "Новый парк в городе",
+   "oop": {},
+   "sentences": [
+    [
+     "В субботу в нашем городе появился новый парк.",
+     "On Saturday a new park appeared in our city."
+    ],
+    [
+     "Раньше на этом месте был старый завод, который не работал уже много лет.",
+     "Before, there was an old factory on this site that hadn't worked for many years."
+    ],
+    [
+     "Теперь здесь растут деревья и цветы, есть небольшое озеро и места для спорта.",
+     "Now trees and flowers grow here, there is a small lake and places for sport."
+    ],
+    [
+     "Для детей сделали много мест для игр.",
+     "Lots of places to play were made for children."
+    ],
+    [
+     "В первый день в парк пришло больше пяти тысяч человек.",
+     "On the first day more than five thousand people came to the park."
+    ],
+    [
+     "Многие жители говорят, что давно ждали такое место.",
+     "Many residents say they had been waiting for such a place for a long time."
+    ],
+    [
+     "«Теперь нам не нужно ехать за город, чтобы гулять на природе», — говорит Анна Петрова, мама двух детей.",
+     "\"Now we don't need to go out of town to walk in nature,\" says Anna Petrova, a mother of two."
+    ],
+    [
+     "Парк работает каждый день с семи утра до одиннадцати вечера.",
+     "The park is open every day from seven in the morning to eleven in the evening."
+    ],
+    [
+     "Вход свободный.",
+     "Admission is free."
+    ],
+    [
+     "Летом здесь будут концерты и кино под открытым небом.",
+     "In summer there will be concerts and open-air cinema here."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Что было на этом месте раньше?",
+     "en": "What was on this site before?",
+     "type": "mc",
+     "options": [
+      "Большой магазин",
+      "Старая школа",
+      "Маленькое озеро",
+      "Старый завод"
+     ],
+     "answer": 3,
+     "words": [
+      "старый",
+      "завод"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "В первый день в парке было много людей.",
+     "en": "On the first day there were many people in the park.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "день",
+      "человек"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "Почему Анна Петрова рада?",
+     "en": "Why is Anna Petrova glad?",
+     "type": "mc",
+     "options": [
+      "Рядом с домом открыли магазин",
+      "Не нужно ехать за город",
+      "Её дети нашли новых друзей",
+      "Парк работает всю ночь"
+     ],
+     "answer": 1,
+     "words": [
+      "ехать",
+      "природа"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "Парк начинает работать в девять часов утра.",
+     "en": "The park opens at nine in the morning.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "работать",
+      "утро"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "Что будет в парке летом?",
+     "en": "What will there be in the park in summer?",
+     "type": "mc",
+     "options": [
+      "Концерты и кино",
+      "Большой рынок",
+      "Уроки для детей",
+      "Спорт на озере"
+     ],
+     "answer": 0,
+     "words": [
+      "лето",
+      "кино"
+     ],
+     "sentence": 9
+    }
+   ]
+  },
+  {
+   "id": "p0040",
+   "lv": "A2",
+   "title": "Пропала собака!",
+   "oop": {
+    "лайме": "name",
+    "лайма": "name"
+   },
+   "sentences": [
+    [
+     "Внимание! Пропала собака!",
+     "Attention! Lost dog!"
+    ],
+    [
+     "Вчера вечером, около восьми часов, в парке у реки мы потеряли нашу собаку Лайму.",
+     "Yesterday evening at about eight o'clock we lost our dog Laima in the park by the river."
+    ],
+    [
+     "Ей два года, она небольшая и белая, но спина у неё чёрная.",
+     "She is two years old, small and white, but her back is black."
+    ],
+    [
+     "Лайма очень добрая и любит людей, но боится машин и больших собак.",
+     "Laima is very friendly and loves people, but she is afraid of cars and big dogs."
+    ],
+    [
+     "Может быть, она сейчас где-то рядом с домом или в другом дворе.",
+     "Maybe she is somewhere near a house right now or in another courtyard."
+    ],
+    [
+     "Мы искали её всю ночь, но не нашли.",
+     "We searched for her all night, but didn't find her."
+    ],
+    [
+     "Наши дети очень скучают по ней и плачут каждый вечер.",
+     "Our children miss her very much and cry every evening."
+    ],
+    [
+     "Если вы видели Лайму, пожалуйста, позвоните нам по телефону 8 900 123 45 67.",
+     "If you have seen Laima, please call us on 8 900 123 45 67."
+    ],
+    [
+     "Можно звонить в любое время, даже ночью.",
+     "You can call at any time, even at night."
+    ],
+    [
+     "Тому, кто найдёт собаку, мы дадим подарок.",
+     "We will give a present to whoever finds the dog."
+    ],
+    [
+     "Спасибо за помощь!",
+     "Thank you for your help!"
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Где семья потеряла собаку?",
+     "en": "Where did the family lose the dog?",
+     "type": "mc",
+     "options": [
+      "В центре города",
+      "Около школы",
+      "В парке у реки",
+      "Во дворе дома"
+     ],
+     "answer": 2,
+     "words": [
+      "парк",
+      "река"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Лайме пять лет.",
+     "en": "Laima is five years old.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "год"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Чего боится Лайма?",
+     "en": "What is Laima afraid of?",
+     "type": "mc",
+     "options": [
+      "Машин и больших собак",
+      "Маленьких детей",
+      "Людей, которые идут по улице",
+      "Воды и реки"
+     ],
+     "answer": 0,
+     "words": [
+      "бояться",
+      "машина"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Дети очень хотят, чтобы собака вернулась.",
+     "en": "The children really want the dog to come back.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "ребёнок",
+      "скучать"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "Когда можно звонить?",
+     "en": "When can you call?",
+     "type": "mc",
+     "options": [
+      "Только утром",
+      "Только днём",
+      "Только вечером",
+      "В любое время"
+     ],
+     "answer": 3,
+     "words": [
+      "время",
+      "звонить"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0041",
+   "lv": "B1",
+   "title": "Работа из дома",
+   "oop": {},
+   "sentences": [
+    [
+     "Ещё несколько лет назад работать из дома могли только некоторые.",
+     "Just a few years ago only a few people could work from home."
+    ],
+    [
+     "Сегодня это обычное дело для миллионов людей.",
+     "Today it is an ordinary thing for millions of people."
+    ],
+    [
+     "Многие любят такой режим: не нужно тратить время на дорогу, можно самому планировать свой день и больше времени проводить с семьёй.",
+     "Many people love this arrangement: there's no need to spend time commuting, you can plan your own day and spend more time with your family."
+    ],
+    [
+     "Однако у работы из дома есть и свои проблемы.",
+     "However, working from home has its own problems."
+    ],
+    [
+     "Некоторые люди говорят, что им не хватает разговоров с коллегами.",
+     "Some people say that they miss conversations with colleagues."
+    ],
+    [
+     "Другим трудно вовремя остановиться, и они сидят за компьютером до ночи.",
+     "Others find it hard to stop on time, and they sit at the computer until night."
+    ],
+    [
+     "Специалисты считают, что помогут несколько простых правил.",
+     "Specialists believe that a few simple rules will help."
+    ],
+    [
+     "Прежде всего, нужно иметь отдельное место для работы, даже если это просто небольшой стол у окна.",
+     "First of all, you need a separate place to work, even if it's just a small table by the window."
+    ],
+    [
+     "Кроме того, важно каждый день начинать работу в одно и то же время и не работать после семи вечера.",
+     "Besides that, it's important to start work at the same time every day and not work after seven in the evening."
+    ],
+    [
+     "И наконец, не забывайте иногда отдыхать и выходить на улицу хотя бы на час в день.",
+     "And finally, don't forget to rest sometimes and go outside for at least an hour a day."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Почему многие люди любят работать из дома?",
+     "en": "Why do many people like working from home?",
+     "type": "mc",
+     "options": [
+      "Дома можно больше спать и меньше работать",
+      "Не надо ездить на работу",
+      "Дома всегда тихо и спокойно",
+      "Начальник не видит, что ты делаешь"
+     ],
+     "answer": 1,
+     "words": [
+      "тратить",
+      "время",
+      "дорога"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Все люди рады, что больше не видят коллег.",
+     "en": "Everyone is glad not to see their colleagues any more.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "коллега"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "Какая проблема бывает у тех, кто работает дома?",
+     "en": "What problem do people working from home sometimes have?",
+     "type": "mc",
+     "options": [
+      "Им не нравится их стол",
+      "Они слишком рано встают",
+      "Они не могут найти хорошую работу рядом с домом",
+      "Им трудно вовремя остановиться"
+     ],
+     "answer": 3,
+     "words": [
+      "остановиться",
+      "компьютер"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Для работы лучше иметь своё отдельное место.",
+     "en": "It's better to have your own separate place for work.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "отдельный",
+      "место"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "Что ещё говорят специалисты?",
+     "en": "What else do specialists say?",
+     "type": "mc",
+     "options": [
+      "Каждый день выходить на улицу",
+      "Работать только по вечерам и в выходные",
+      "Покупать большой стол",
+      "Меньше говорить с семьёй"
+     ],
+     "answer": 0,
+     "words": [
+      "забывать",
+      "выходить"
+     ],
+     "sentence": 9
+    }
+   ]
+  },
+  {
+   "id": "p0042",
+   "lv": "B1",
+   "title": "Письмо в отель",
+   "oop": {
+    "сергей": "name"
+   },
+   "sentences": [
+    [
+     "Добрый день! Пишу вам о своём отдыхе в отеле «Волна».",
+     "Good afternoon! I'm writing to you about my stay at the Volna hotel."
+    ],
+    [
+     "Я провёл у вас пять ночей в июле и хочу рассказать о своих впечатлениях.",
+     "I spent five nights with you in July, and I want to share my impressions."
+    ],
+    [
+     "Прежде всего, спасибо вашим сотрудникам: они всегда были добрыми и готовы помочь.",
+     "First of all, thanks to your staff: they were always kind and ready to help."
+    ],
+    [
+     "Завтраки были отличные, особенно свежий хлеб и сыр.",
+     "The breakfasts were excellent, especially the fresh bread and cheese."
+    ],
+    [
+     "Однако были и серьёзные проблемы.",
+     "However, there were also serious problems."
+    ],
+    [
+     "Мой номер находился на третьем этаже прямо над баром, и каждую ночь до двух часов там играла музыка.",
+     "My room was on the third floor right above the bar, and every night music played there until two o'clock."
+    ],
+    [
+     "Когда я попросил другой номер, мне ответили, что свободных номеров нет.",
+     "When I asked for another room, I was told there were no free rooms."
+    ],
+    [
+     "Кроме того, два дня в номере не было горячей воды.",
+     "Besides that, there was no hot water in the room for two days."
+    ],
+    [
+     "Я надеюсь, что вы решите эти проблемы.",
+     "I hope that you will solve these problems."
+    ],
+    [
+     "Мне бы хотелось ещё раз приехать в ваш прекрасный город, но только если я буду уверен, что смогу спокойно спать.",
+     "I would like to come to your wonderful city again, but only if I am sure that I will be able to sleep peacefully."
+    ],
+    [
+     "С уважением, Сергей Ковалёв",
+     "Sincerely, Sergey Kovalyov"
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Сергею понравились люди, которые работают в отеле.",
+     "en": "Sergey liked the people who work at the hotel.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "сотрудник",
+      "помочь"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Что особенно понравилось Сергею за завтраком?",
+     "en": "What did Sergey especially like at breakfast?",
+     "type": "mc",
+     "options": [
+      "Горячий кофе",
+      "Суп с хлебом",
+      "Хлеб и сыр",
+      "Мясо и рыба"
+     ],
+     "answer": 2,
+     "words": [
+      "свежий",
+      "хлеб"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Почему Сергей плохо спал?",
+     "en": "Why did Sergey sleep badly?",
+     "type": "mc",
+     "options": [
+      "Каждую ночь в баре играла музыка",
+      "В номере было слишком холодно",
+      "Кровать в номере была старой и маленькой",
+      "Он поздно пил кофе в баре"
+     ],
+     "answer": 0,
+     "words": [
+      "бар",
+      "музыка"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Сергею сразу дали другой номер.",
+     "en": "Sergey was given another room straight away.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "попросить",
+      "свободный"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "При каком условии Сергей вернётся?",
+     "en": "On what condition will Sergey come back?",
+     "type": "mc",
+     "options": [
+      "Если номера будут стоить меньше",
+      "Если будет хорошая погода",
+      "Если завтраки будут лучше",
+      "Если сможет спокойно спать"
+     ],
+     "answer": 3,
+     "words": [
+      "уверенный",
+      "спать"
+     ],
+     "sentence": 9
+    }
+   ]
+  },
+  {
+   "id": "p0043",
+   "lv": "B1",
+   "title": "Никогда не поздно",
+   "oop": {},
+   "sentences": [
+    [
+     "Два года назад я чувствовал себя плохо: у меня не было сил, я плохо спал и часто болел.",
+     "Two years ago I felt bad: I had no energy, I slept badly and was often ill."
+    ],
+    [
+     "Врач сказал мне, что пора что-то менять.",
+     "The doctor told me it was time to change something."
+    ],
+    [
+     "Я решил заниматься спортом, хотя никогда его не любил.",
+     "I decided to take up sport, although I had never liked it."
+    ],
+    [
+     "Сначала я начал ходить в спортивный зал рядом с домом.",
+     "First I started going to the gym near my home."
+    ],
+    [
+     "Первая неделя была ужасной: у меня всё болело, и я хотел всё бросить.",
+     "The first week was terrible: everything hurt, and I wanted to give it all up."
+    ],
+    [
+     "Но тренер сказал, что так бывает у всех и что главное — не бросать.",
+     "But the coach said that this happens to everyone and that the main thing is not to quit."
+    ],
+    [
+     "Я ходил в зал три раза в неделю, а по выходным долго гулял в парке.",
+     "I went to the gym three times a week, and at weekends I took long walks in the park."
+    ],
+    [
+     "Через три месяца стало намного легче.",
+     "Three months later it became much easier."
+    ],
+    [
+     "Я начал лучше спать, у меня появилось больше энергии, и настроение стало гораздо лучше.",
+     "I started sleeping better, I had more energy, and my mood became much better."
+    ],
+    [
+     "Прошлой осенью я впервые участвовал в городском соревновании и оказался в первой сотне.",
+     "Last autumn I took part in a city competition for the first time and finished in the top hundred."
+    ],
+    [
+     "Для меня это была настоящая победа.",
+     "For me it was a real victory."
+    ],
+    [
+     "Теперь я говорю всем друзьям: начать никогда не поздно!",
+     "Now I tell all my friends: it's never too late to start!"
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Кто сказал, что пора что-то менять?",
+     "en": "Who said it was time to change something?",
+     "type": "mc",
+     "options": [
+      "Жена",
+      "Тренер",
+      "Врач",
+      "Друг"
+     ],
+     "answer": 2,
+     "words": [
+      "врач"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Автор всегда очень любил спорт.",
+     "en": "The author always loved sport very much.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "спорт",
+      "любить"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Что сказал тренер?",
+     "en": "What did the coach say?",
+     "type": "mc",
+     "options": [
+      "Что бросать нельзя",
+      "Что лучше всё бросить",
+      "Что нужно ходить в зал каждый день",
+      "Что спорт не для всех"
+     ],
+     "answer": 0,
+     "words": [
+      "тренер",
+      "бросать"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Спорт помог автору лучше спать.",
+     "en": "Sport helped the author sleep better.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "спать",
+      "настроение"
+     ],
+     "sentence": 8
+    },
+    {
+     "q": "Что автор сделал прошлой осенью?",
+     "en": "What did the author do last autumn?",
+     "type": "mc",
+     "options": [
+      "Стал тренером",
+      "Участвовал в соревновании",
+      "Начал работать в спортивном зале",
+      "Бросил спорт"
+     ],
+     "answer": 1,
+     "words": [
+      "участвовать",
+      "соревнование"
+     ],
+     "sentence": 9
+    }
+   ]
+  },
+  {
+   "id": "p0044",
+   "lv": "B1",
+   "title": "Новая линия метро",
+   "oop": {},
+   "sentences": [
+    [
+     "В городе начали строить новую линию метро, которая свяжет южные районы с центром.",
+     "The city has started building a new metro line that will connect the southern districts with the centre."
+    ],
+    [
+     "Об этом вчера сообщил мэр на встрече с журналистами.",
+     "The mayor announced this yesterday at a meeting with journalists."
+    ],
+    [
+     "По его словам, на линии будет восемь станций, а первые поезда пойдут через четыре года.",
+     "According to him, the line will have eight stations, and the first trains will run in four years."
+    ],
+    [
+     "Сейчас жителям южных районов приходится тратить на дорогу до центра больше часа.",
+     "At the moment residents of the southern districts have to spend more than an hour getting to the centre."
+    ],
+    [
+     "Автобусы всегда полные, а на дорогах слишком много машин.",
+     "The buses are always full, and there are too many cars on the roads."
+    ],
+    [
+     "После открытия новой линии поездка займёт не больше двадцати пяти минут.",
+     "After the new line opens, the journey will take no more than twenty-five minutes."
+    ],
+    [
+     "Однако не все довольны этой новостью.",
+     "However, not everyone is happy with this news."
+    ],
+    [
+     "Некоторые жители боятся, что строительство будет им мешать, а часть деревьев в парке придётся убрать.",
+     "Some residents fear that the construction will disturb them, and that some of the trees in the park will have to be removed."
+    ],
+    [
+     "Власти города обещают, что когда работы закончатся, парк станет даже больше и красивее, чем сейчас.",
+     "The city authorities promise that when the work is finished, the park will become even bigger and more beautiful than it is now."
+    ],
+    [
+     "Мэр также сказал, что билет на новой линии будет стоить столько же, сколько и на других линиях.",
+     "The mayor also said that a ticket on the new line will cost the same as on the other lines."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Какие районы свяжет новая линия с центром?",
+     "en": "Which districts will the new line connect with the centre?",
+     "type": "mc",
+     "options": [
+      "Северные",
+      "Западные",
+      "Южные",
+      "Восточные"
+     ],
+     "answer": 2,
+     "words": [
+      "южный",
+      "район"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "На новой линии будет десять станций.",
+     "en": "The new line will have ten stations.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "станция"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Сколько времени займёт поездка в центр на новом метро?",
+     "en": "How long will a trip to the centre take on the new metro?",
+     "type": "mc",
+     "options": [
+      "До двадцати пяти минут",
+      "Больше часа",
+      "Около сорока минут",
+      "Примерно столько же, сколько сейчас"
+     ],
+     "answer": 0,
+     "words": [
+      "поездка",
+      "минута"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Новость понравилась не всем.",
+     "en": "Not everyone liked the news.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "довольный"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "Чего боятся некоторые жители?",
+     "en": "What are some residents afraid of?",
+     "type": "mc",
+     "options": [
+      "Что поезда будут дорогими",
+      "Что станций будет мало",
+      "Что линию не построят и через десять лет",
+      "Что в парке станет меньше деревьев"
+     ],
+     "answer": 3,
+     "words": [
+      "житель",
+      "бояться"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0045",
+   "lv": "B1",
+   "title": "Интервью с художницей",
+   "oop": {
+    "мастерская": "artist's studio",
+    "художественный": "art (school)"
+   },
+   "sentences": [
+    [
+     "Марии Орловой двадцать девять лет, и её картины уже знают не только в России, но и за границей.",
+     "Maria Orlova is twenty-nine, and her paintings are already known not only in Russia but abroad too."
+    ],
+    [
+     "Мы встретились с ней в её мастерской.",
+     "We met her in her studio."
+    ],
+    [
+     "— Мария, когда вы начали писать картины?",
+     "\"Maria, when did you start painting?\""
+    ],
+    [
+     "— В детстве. Моя бабушка была учителем в художественной школе, и я всё время сидела у неё на уроках.",
+     "\"In childhood. My grandmother was a teacher at an art school, and I sat in her lessons all the time.\""
+    ],
+    [
+     "— Где вы находите идеи?",
+     "\"Where do you find ideas?\""
+    ],
+    [
+     "— Обычная жизнь: люди в метро, старые дома, свет в окнах вечером.",
+     "\"Ordinary life: people on the metro, old houses, light in the windows in the evening.\""
+    ],
+    [
+     "Мне кажется, что в самых простых вещах есть своя красота.",
+     "It seems to me that the simplest things have their own beauty."
+    ],
+    [
+     "— Какой совет вы дали бы молодым художникам?",
+     "\"What advice would you give to young artists?\""
+    ],
+    [
+     "— Работать каждый день и не бояться ошибок.",
+     "\"To work every day and not be afraid of mistakes.\""
+    ],
+    [
+     "Раньше я почти никому не показывала свои картины, потому что они казались мне плохими.",
+     "I used to show my paintings to almost nobody because they seemed bad to me."
+    ],
+    [
+     "Сейчас я понимаю, что без ошибок нет роста.",
+     "Now I understand that without mistakes there is no growth."
+    ],
+    [
+     "В октябре в городском музее откроют её новую выставку.",
+     "In October her new exhibition will open at the city museum."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Картины Марии известны и в других странах.",
+     "en": "Maria's paintings are known in other countries too.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "картина",
+      "знать"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "Кто работал в художественной школе?",
+     "en": "Who worked at an art school?",
+     "type": "mc",
+     "options": [
+      "Мама Марии",
+      "Бабушка Марии",
+      "Сама Мария",
+      "Учитель Марии"
+     ],
+     "answer": 1,
+     "words": [
+      "бабушка"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Где Мария находит идеи?",
+     "en": "Where does Maria find ideas?",
+     "type": "mc",
+     "options": [
+      "В путешествиях",
+      "В картинах других художников",
+      "В природе и на море",
+      "В обычной жизни"
+     ],
+     "answer": 3,
+     "words": [
+      "обычный",
+      "жизнь"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Мария всегда была довольна своими картинами.",
+     "en": "Maria was always happy with her paintings.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "картина",
+      "казаться"
+     ],
+     "sentence": 9
+    },
+    {
+     "q": "Что будет в октябре?",
+     "en": "What will happen in October?",
+     "type": "mc",
+     "options": [
+      "Выставка в городском музее",
+      "Новое интервью",
+      "Урок для детей",
+      "Поездка Марии за границу с картинами"
+     ],
+     "answer": 0,
+     "words": [
+      "музей",
+      "выставка"
+     ],
+     "sentence": 11
+    }
+   ]
+  },
+  {
+   "id": "p0046",
+   "lv": "B1",
+   "title": "Жизнь в другой стране",
+   "oop": {
+    "родина": "homeland"
+   },
+   "sentences": [
+    [
+     "Пять лет назад я переехала из Новосибирска в Германию.",
+     "Five years ago I moved from Novosibirsk to Germany."
+    ],
+    [
+     "Мой муж получил там работу, и мы решили попробовать.",
+     "My husband got a job there, and we decided to give it a try."
+    ],
+    [
+     "Первый год был очень тяжёлым.",
+     "The first year was very hard."
+    ],
+    [
+     "Я почти не знала языка, у меня не было друзей, и я очень скучала по родителям.",
+     "I hardly knew the language, I had no friends, and I missed my parents a lot."
+    ],
+    [
+     "Даже простые вещи, например купить билет на поезд или поговорить с врачом, казались мне ужасно сложными.",
+     "Even simple things, like buying a train ticket or talking to a doctor, seemed terribly difficult to me."
+    ],
+    [
+     "Всё изменилось, когда я пошла на курсы немецкого языка.",
+     "Everything changed when I started a German language course."
+    ],
+    [
+     "Там я познакомилась с людьми из разных стран, у которых были те же проблемы.",
+     "There I met people from different countries who had the same problems."
+    ],
+    [
+     "Мы стали помогать друг другу и скоро стали настоящими друзьями.",
+     "We started helping each other and soon became real friends."
+    ],
+    [
+     "Сейчас я работаю в больнице, хорошо говорю на немецком и чувствую себя здесь как дома.",
+     "Now I work at a hospital, speak German well and feel at home here."
+    ],
+    [
+     "Но каждое лето мы обязательно ездим в Россию, потому что родина остаётся родиной.",
+     "But every summer we always go to Russia, because your homeland is still your homeland."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Почему семья переехала в Германию?",
+     "en": "Why did the family move to Germany?",
+     "type": "mc",
+     "options": [
+      "Она хотела учиться",
+      "Мужу дали работу",
+      "Там жили её родители и старшая сестра",
+      "Там было больше солнца"
+     ],
+     "answer": 1,
+     "words": [
+      "муж",
+      "работа"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Первый год в Германии был лёгким.",
+     "en": "The first year in Germany was easy.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "первый",
+      "год"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Что изменило её жизнь?",
+     "en": "What changed her life?",
+     "type": "mc",
+     "options": [
+      "Новая квартира",
+      "Новая работа в большой больнице",
+      "Поездка в Россию",
+      "Курсы немецкого языка"
+     ],
+     "answer": 3,
+     "words": [
+      "измениться",
+      "курс"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "На курсах она нашла друзей.",
+     "en": "She found friends on the course.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "помогать",
+      "друг"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "Что семья делает каждое лето?",
+     "en": "What does the family do every summer?",
+     "type": "mc",
+     "options": [
+      "Едет на море в Германии",
+      "Остаётся дома",
+      "Ездит в Россию",
+      "Ездит в разные страны"
+     ],
+     "answer": 2,
+     "words": [
+      "лето"
+     ],
+     "sentence": 9
+    }
+   ]
+  },
+  {
+   "id": "p0047",
+   "lv": "B1",
+   "title": "Как выбрать квартиру",
+   "oop": {},
+   "sentences": [
+    [
+     "Если вы собираетесь снять квартиру, не решайте быстро.",
+     "If you are going to rent a flat, don't decide quickly."
+    ],
+    [
+     "Ошибка может стоить вам не только денег, но и спокойной жизни.",
+     "A mistake can cost you not only money but also your peace of mind."
+    ],
+    [
+     "Прежде всего, решите, сколько вы готовы платить каждый месяц, и не смотрите квартиры дороже.",
+     "First of all, decide how much you are ready to pay each month, and don't look at flats that cost more."
+    ],
+    [
+     "Затем стоит подумать о районе: как далеко до работы, есть ли рядом метро, магазины и школа, если у вас есть дети.",
+     "Then think about the district: how far it is to work, whether there is a metro, shops and a school nearby, if you have children."
+    ],
+    [
+     "Когда вы придёте смотреть квартиру, проверьте всё очень хорошо.",
+     "When you come to see a flat, check everything very well."
+    ],
+    [
+     "Попросите хозяина показать документы на квартиру.",
+     "Ask the owner to show you the documents for the flat."
+    ],
+    [
+     "Есть ли горячая вода, можно ли хорошо закрыть окна, нет ли в комнатах странного запаха?",
+     "Is there hot water, can the windows be closed properly, is there a strange smell in the rooms?"
+    ],
+    [
+     "Обязательно спросите, кто живёт за стеной и насколько там тихо по вечерам.",
+     "Be sure to ask who lives behind the wall and how quiet it is there in the evenings."
+    ],
+    [
+     "Хорошая идея — прийти в тот же район ещё раз вечером и просто пройти по улицам.",
+     "A good idea is to come to the same district again in the evening and just walk along the streets."
+    ],
+    [
+     "И последнее: никогда не отдавайте деньги, пока не подпишете договор.",
+     "And finally: never hand over money until you have signed a contract."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Что нужно решить прежде всего?",
+     "en": "What should you decide first of all?",
+     "type": "mc",
+     "options": [
+      "Сколько платить в месяц",
+      "В каком районе города вы хотите жить",
+      "Кто живёт за стеной",
+      "Сколько комнат нужно"
+     ],
+     "answer": 0,
+     "words": [
+      "платить",
+      "месяц"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "О районе думать не нужно, важна только квартира.",
+     "en": "There's no need to think about the district, only the flat matters.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "район"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "О чём обязательно нужно спросить?",
+     "en": "What should you be sure to ask about?",
+     "type": "mc",
+     "options": [
+      "О цене на воду",
+      "О старых хозяевах",
+      "О соседях за стеной",
+      "О ближайшем банке"
+     ],
+     "answer": 2,
+     "words": [
+      "спросить",
+      "стена"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "Автор думает, что полезно прийти в район ещё раз вечером.",
+     "en": "The author thinks it's useful to come to the district again in the evening.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "вечер",
+      "район"
+     ],
+     "sentence": 8
+    },
+    {
+     "q": "Когда можно отдавать деньги?",
+     "en": "When can you hand over the money?",
+     "type": "mc",
+     "options": [
+      "Когда увидите квартиру",
+      "После того как подписали договор",
+      "Когда первый раз встретите хозяина квартиры",
+      "Сразу после звонка"
+     ],
+     "answer": 1,
+     "words": [
+      "деньги",
+      "договор"
+     ],
+     "sentence": 9
+    }
+   ]
+  },
+  {
+   "id": "p0048",
+   "lv": "B1",
+   "title": "Заказ не пришёл",
+   "oop": {},
+   "sentences": [
+    [
+     "Здравствуйте! Пишу вам уже второй раз по поводу моего заказа номер 4512.",
+     "Hello! I am writing to you for the second time about my order number 4512."
+    ],
+    [
+     "Две недели назад я купил на вашем сайте новую сумку и заплатил картой.",
+     "Two weeks ago I bought a new bag on your website and paid by card."
+    ],
+    [
+     "Мне обещали, что заказ доставят в течение трёх дней.",
+     "I was promised that the order would be delivered within three days."
+    ],
+    [
+     "Однако я так ничего и не получил.",
+     "However, I still haven't received anything."
+    ],
+    [
+     "Когда я позвонил по вашему телефону, мне сказали, что товар уже в пути, и попросили подождать.",
+     "When I called your number, I was told that the item was already on its way and was asked to wait."
+    ],
+    [
+     "Я ждал ещё неделю, но ничего не изменилось.",
+     "I waited another week, but nothing changed."
+    ],
+    [
+     "На мои письма никто не отвечает.",
+     "No one answers my emails."
+    ],
+    [
+     "Я понимаю, что бывают разные ситуации, но так относиться к клиентам нельзя.",
+     "I understand that different situations happen, but you cannot treat clients like this."
+    ],
+    [
+     "Прошу вас либо доставить заказ до конца этой недели, либо вернуть мне деньги.",
+     "I ask you either to deliver the order by the end of this week or to return my money."
+    ],
+    [
+     "Если нет, я буду вынужден написать о вашем магазине в интернете.",
+     "If not, I will be forced to write about your shop on the internet."
+    ],
+    [
+     "С уважением, Антон Смирнов",
+     "Sincerely, Anton Smirnov"
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Антон пишет в магазин не в первый раз.",
+     "en": "Anton is not writing to the shop for the first time.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "второй",
+      "раз"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "Что купил Антон?",
+     "en": "What did Anton buy?",
+     "type": "mc",
+     "options": [
+      "Телефон",
+      "Компьютер",
+      "Книгу",
+      "Сумку"
+     ],
+     "answer": 3,
+     "words": [
+      "купить",
+      "сайт"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "За сколько дней обещали доставить заказ?",
+     "en": "Within how many days was the order supposed to be delivered?",
+     "type": "mc",
+     "options": [
+      "За неделю",
+      "За три дня",
+      "За две недели",
+      "За один день"
+     ],
+     "answer": 1,
+     "words": [
+      "доставить",
+      "день"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Магазин быстро ответил на письма Антона.",
+     "en": "The shop quickly answered Anton's emails.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "письмо",
+      "отвечать"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "Чего хочет Антон?",
+     "en": "What does Anton want?",
+     "type": "mc",
+     "options": [
+      "Получить заказ или деньги назад",
+      "Купить другой товар",
+      "Работать в магазине",
+      "Поговорить с директором магазина по телефону"
+     ],
+     "answer": 0,
+     "words": [
+      "вернуть",
+      "деньги"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0049",
+   "lv": "B1",
+   "title": "Сад моей бабушки",
+   "oop": {},
+   "sentences": [
+    [
+     "Когда я была маленькой, каждое лето я проводила у бабушки в деревне.",
+     "When I was little, I spent every summer at my grandmother's in the village."
+    ],
+    [
+     "У неё был большой сад, и для меня это было самое прекрасное место на свете.",
+     "She had a big garden, and for me it was the most wonderful place in the world."
+    ],
+    [
+     "Там росли старые деревья и много цветов, которые бабушка знала по названиям.",
+     "Old trees grew there, and lots of flowers that grandmother knew by name."
+    ],
+    [
+     "Каждое утро мы вместе работали в саду, а потом пили чай на улице.",
+     "Every morning we worked in the garden together and then drank tea outside."
+    ],
+    [
+     "Бабушка рассказывала мне истории о своём детстве, о войне и о том, как она познакомилась с дедушкой.",
+     "Grandmother told me stories about her childhood, about the war and about how she met grandfather."
+    ],
+    [
+     "В августе мы собирали яблоки, и потом вся семья ела их до самой зимы.",
+     "In August we picked apples, and then the whole family ate them right up to winter."
+    ],
+    [
+     "Прошло много лет.",
+     "Many years have passed."
+    ],
+    [
+     "Бабушки уже нет, а дом в деревне давно продали.",
+     "Grandmother is no longer with us, and the house in the village was sold long ago."
+    ],
+    [
+     "Но недавно я купила небольшой участок за городом и посадила там несколько деревьев.",
+     "But recently I bought a small plot outside the city and planted several trees there."
+    ],
+    [
+     "Теперь мои дети помогают мне в саду, и я рассказываю им о бабушке.",
+     "Now my children help me in the garden, and I tell them about grandmother."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Где девочка проводила лето?",
+     "en": "Where did the girl spend her summers?",
+     "type": "mc",
+     "options": [
+      "На море с родителями",
+      "В городе у подруги",
+      "В деревне у бабушки",
+      "В гостях у дяди"
+     ],
+     "answer": 2,
+     "words": [
+      "лето",
+      "деревня"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "Бабушка знала, как называются её цветы.",
+     "en": "Grandmother knew what her flowers were called.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "цветок",
+      "название"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "О чём рассказывала бабушка?",
+     "en": "What did grandmother talk about?",
+     "type": "mc",
+     "options": [
+      "Про детство и дедушку",
+      "Про жизнь в большом городе",
+      "Про свою работу в школе",
+      "Про новые фильмы и книги"
+     ],
+     "answer": 0,
+     "words": [
+      "история",
+      "детство"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "Дом бабушки в деревне всё ещё принадлежит семье.",
+     "en": "Grandmother's village house still belongs to the family.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "дом",
+      "продать"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "Что она сделала недавно?",
+     "en": "What did she do recently?",
+     "type": "mc",
+     "options": [
+      "Продала свой дом",
+      "Посадила деревья на своём участке",
+      "Поехала в деревню",
+      "Купила дом бабушки"
+     ],
+     "answer": 1,
+     "words": [
+      "посадить"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0050",
+   "lv": "B1",
+   "title": "Помощь животным",
+   "oop": {
+    "приют": "animal shelter (topic)"
+   },
+   "sentences": [
+    [
+     "В нашем городе уже десять лет работает приют для собак и кошек, у которых нет своего дома.",
+     "For ten years our city has had a shelter for dogs and cats that have no home of their own."
+    ],
+    [
+     "Сейчас там живут больше двухсот животных.",
+     "More than two hundred animals live there now."
+    ],
+    [
+     "Приют существует в основном на деньги обычных людей, и помощь ему нужна всегда.",
+     "The shelter exists mainly on money from ordinary people, and it always needs help."
+    ],
+    [
+     "Каждые выходные сюда приходят люди, которые хотят помочь: студенты, бабушки и дедушки, целые семьи с детьми.",
+     "Every weekend people who want to help come here: students, grandmothers and grandfathers, whole families with children."
+    ],
+    [
+     "Они гуляют с собаками, играют с кошками и приносят еду и лекарства.",
+     "They walk the dogs, play with the cats and bring food and medicine."
+    ],
+    [
+     "«Я прихожу сюда уже третий год, — рассказывает Юлия, которая учится в университете.",
+     "\"I've been coming here for the third year already,\" says Yulia, a university student."
+    ],
+    [
+     "— Здесь я чувствую, что делаю что-то действительно важное».",
+     "\"Here I feel that I'm doing something really important.\""
+    ],
+    [
+     "Многие животные в приюте находят новый дом.",
+     "Many animals in the shelter find a new home."
+    ],
+    [
+     "Только в прошлом году хозяев нашли почти сто собак и кошек.",
+     "Last year alone almost a hundred dogs and cats found owners."
+    ],
+    [
+     "Если вы хотите помочь, не обязательно брать животное домой.",
+     "If you want to help, you don't have to take an animal home."
+    ],
+    [
+     "Можно просто прийти в субботу и провести пару часов с собаками.",
+     "You can simply come on Saturday and spend a couple of hours with the dogs."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Сколько животных сейчас живёт в приюте?",
+     "en": "How many animals live in the shelter now?",
+     "type": "mc",
+     "options": [
+      "Около ста",
+      "Больше двухсот",
+      "Около пятидесяти",
+      "Больше тысячи"
+     ],
+     "answer": 1,
+     "words": [
+      "животное"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Приют получает деньги в основном от государства.",
+     "en": "The shelter gets money mainly from the state.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "деньги",
+      "обычный"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Что делают люди, которые приходят помогать?",
+     "en": "What do the people who come to help do?",
+     "type": "mc",
+     "options": [
+      "Строят новый дом для приюта",
+      "Продают животных",
+      "Покупают машину для приюта",
+      "Гуляют с собаками"
+     ],
+     "answer": 3,
+     "words": [
+      "гулять",
+      "собака"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "В прошлом году многие животные нашли новый дом.",
+     "en": "Last year many animals found a new home.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "хозяин",
+      "найти"
+     ],
+     "sentence": 8
+    },
+    {
+     "q": "Как ещё можно помочь приюту?",
+     "en": "How else can you help the shelter?",
+     "type": "mc",
+     "options": [
+      "Провести несколько часов с собаками",
+      "Купить новую машину",
+      "Написать большое письмо мэру нашего города",
+      "Работать там каждый день"
+     ],
+     "answer": 0,
+     "words": [
+      "провести",
+      "час"
+     ],
+     "sentence": 10
+    }
+   ]
+  },
+  {
+   "id": "p0051",
+   "lv": "B1",
+   "title": "Путешествие на Байкал",
+   "oop": {},
+   "sentences": [
+    [
+     "Прошлым летом мы с друзьями наконец поехали на Байкал, о котором давно мечтали.",
+     "Last summer my friends and I finally went to Lake Baikal, which we had long dreamed of."
+    ],
+    [
+     "Из Москвы мы летели до Иркутска почти шесть часов, а потом ещё несколько часов ехали на машине.",
+     "From Moscow we flew to Irkutsk for almost six hours, and then drove for several more hours."
+    ],
+    [
+     "Байкал — самое глубокое озеро в мире, и вода в нём настолько чистая, что видно дно в нескольких метрах под водой.",
+     "Baikal is the deepest lake in the world, and its water is so clean that you can see the bottom several metres under the water."
+    ],
+    [
+     "Мы жили в небольшом доме на берегу.",
+     "We stayed in a small house on the shore."
+    ],
+    [
+     "Днём ходили в горы, а по вечерам сидели у огня и смотрели на звёзды.",
+     "During the day we walked in the mountains, and in the evenings we sat by the fire and looked at the stars."
+    ],
+    [
+     "Вода даже в июле была очень холодной, но я всё-таки вошла в воду.",
+     "Even in July the water was very cold, but I went into the water anyway."
+    ],
+    [
+     "Больше всего мне понравилось, что там было тихо: ни машин, ни людей, только ветер и волны.",
+     "What I liked most was that it was quiet there: no cars, no people, only the wind and the waves."
+    ],
+    [
+     "Честно говоря, возвращаться в большой город совсем не хотелось.",
+     "To be honest, I didn't want to return to the big city at all."
+    ],
+    [
+     "Мы уже решили, что зимой приедем снова, чтобы увидеть Байкал подо льдом.",
+     "We have already decided that we'll come again in winter to see Baikal under the ice."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Часть пути друзья ехали на машине.",
+     "en": "The friends travelled part of the way by car.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "машина"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Где жили друзья?",
+     "en": "Where did the friends stay?",
+     "type": "mc",
+     "options": [
+      "В большом отеле в городе",
+      "У родственников в Иркутске",
+      "В доме у озера",
+      "В доме высоко в горах"
+     ],
+     "answer": 2,
+     "words": [
+      "дом",
+      "берег"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Что друзья делали по вечерам?",
+     "en": "What did the friends do in the evenings?",
+     "type": "mc",
+     "options": [
+      "Сидели у огня под звёздами",
+      "Ездили в город и ходили по магазинам",
+      "Смотрели фильмы в доме",
+      "Ходили в горы"
+     ],
+     "answer": 0,
+     "words": [
+      "вечер",
+      "огонь"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "В июле вода в озере была тёплой.",
+     "en": "In July the water in the lake was warm.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "вода",
+      "холодный"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Когда друзья хотят вернуться?",
+     "en": "When do the friends want to come back?",
+     "type": "mc",
+     "options": [
+      "Следующим летом",
+      "Зимой",
+      "Весной",
+      "Осенью"
+     ],
+     "answer": 1,
+     "words": [
+      "зима"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0052",
+   "lv": "B1",
+   "title": "Потерянная карта",
+   "oop": {
+    "заблокировать": "block (a card)"
+   },
+   "sentences": [
+    [
+     "— Добрый день! Чем могу помочь?",
+     "\"Good afternoon! How can I help?\""
+    ],
+    [
+     "— Здравствуйте. Кажется, я потеряла карту.",
+     "\"Hello. I think I've lost my bank card.\""
+    ],
+    [
+     "Вчера вечером я платила ею в магазине, а сегодня утром её не было в сумке.",
+     "Yesterday evening I paid with it in a shop, and this morning it wasn't in my bag."
+    ],
+    [
+     "Обычно я всё помню, но вчера у меня был очень трудный день на работе.",
+     "Usually I remember everything, but yesterday I had a very hard day at work."
+    ],
+    [
+     "— Понятно. Не волнуйтесь, сейчас мы всё проверим.",
+     "\"I see. Don't worry, we'll check everything now.\""
+    ],
+    [
+     "Покажите, пожалуйста, ваши документы.",
+     "Please show me your ID."
+    ],
+    [
+     "Так... Вижу, что после магазина по карте не было никаких операций.",
+     "Right... I can see that there have been no transactions on the card since the shop."
+    ],
+    [
+     "Это хорошая новость: значит, никто ею не пользовался.",
+     "That's good news: it means nobody has used it."
+    ],
+    [
+     "Я сейчас заблокирую старую карту, чтобы никто не смог её использовать.",
+     "I'll block the old card now so that nobody can use it."
+    ],
+    [
+     "— А деньги на счёте не пропадут?",
+     "\"And the money in my account won't disappear?\""
+    ],
+    [
+     "— Нет, конечно. Все деньги останутся на вашем счёте.",
+     "\"No, of course not. All the money will stay in your account.\""
+    ],
+    [
+     "Новую карту вы сможете получить здесь через пять рабочих дней.",
+     "You will be able to collect your new card here in five working days."
+    ],
+    [
+     "А пока можно платить с помощью телефона.",
+     "In the meantime you can pay with your phone."
+    ],
+    [
+     "— Большое спасибо, теперь я спокойна!",
+     "\"Thank you very much, now I feel calm!\""
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Какая проблема у женщины?",
+     "en": "What is the woman's problem?",
+     "type": "mc",
+     "options": [
+      "Она забыла свои документы",
+      "Она потеряла карту",
+      "На счёте нет денег",
+      "Карта больше не работает в магазине"
+     ],
+     "answer": 1,
+     "words": [
+      "потерять",
+      "карта"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "После магазина картой никто не платил.",
+     "en": "Nobody has paid with the card since the shop.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "новость",
+      "пользоваться"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "Что сделает сотрудник банка со старой картой?",
+     "en": "What will the bank employee do with the old card?",
+     "type": "mc",
+     "options": [
+      "Отдаст её женщине",
+      "Найдёт её в магазине",
+      "Отправит её по почте",
+      "Заблокирует её"
+     ],
+     "answer": 3,
+     "words": [
+      "использовать"
+     ],
+     "sentence": 8
+    },
+    {
+     "q": "Деньги со счёта пропадут.",
+     "en": "The money will disappear from the account.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "деньги",
+      "счёт"
+     ],
+     "sentence": 10
+    },
+    {
+     "q": "Когда женщина получит новую карту?",
+     "en": "When will the woman get her new card?",
+     "type": "mc",
+     "options": [
+      "Примерно через неделю",
+      "Завтра утром",
+      "Через месяц",
+      "Сегодня вечером"
+     ],
+     "answer": 0,
+     "words": [
+      "получить",
+      "рабочий"
+     ],
+     "sentence": 11
+    }
+   ]
+  },
+  {
+   "id": "p0053",
+   "lv": "B1",
+   "title": "Новый год в нашей семье",
+   "oop": {
+    "ёлка": "New Year tree",
+    "украшать": "decorate (the tree)",
+    "салат": "food (Olivier salad)"
+   },
+   "sentences": [
+    [
+     "Для нашей семьи Новый год — самый главный праздник.",
+     "For our family New Year is the most important holiday."
+    ],
+    [
+     "Подготовка к нему начинается ещё в начале декабря.",
+     "Preparation for it starts back at the beginning of December."
+    ],
+    [
+     "Мы вместе выбираем подарки, а дети пишут письма Деду Морозу.",
+     "We choose presents together, and the children write letters to Grandfather Frost."
+    ],
+    [
+     "За день до праздника папа приносит домой ёлку, и вечером мы все вместе её украшаем.",
+     "The day before the holiday Dad brings home a fir tree, and in the evening we all decorate it together."
+    ],
+    [
+     "Тридцать первого декабря с самого утра мама и бабушка готовят много вкусной еды.",
+     "On the thirty-first of December, from early morning, Mum and Grandma cook lots of tasty food."
+    ],
+    [
+     "Обязательно должен быть салат «Оливье», без него Новый год у нас просто невозможен.",
+     "There must be Olivier salad; without it New Year is simply impossible for us."
+    ],
+    [
+     "Вечером приходят гости: соседи, друзья, родственники.",
+     "In the evening guests come: neighbours, friends, relatives."
+    ],
+    [
+     "За пять минут до двенадцати мы слушаем, что говорит президент по телевизору.",
+     "Five minutes before twelve we listen to what the president says on TV."
+    ],
+    [
+     "В двенадцать часов ночи каждый думает о своём желании.",
+     "At twelve midnight everyone thinks of a wish."
+    ],
+    [
+     "Потом дети бегут открывать подарки, а взрослые выходят на улицу, чтобы посмотреть на огни в небе.",
+     "Then the children run to open their presents, and the adults go outside to look at the lights in the sky."
+    ],
+    [
+     "Спать мы идём только под утро.",
+     "We only go to bed towards morning."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "К Новому году семья начинает готовиться почти за месяц.",
+     "en": "The family starts preparing for New Year almost a month ahead.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "начало",
+      "декабрь"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Кто приносит домой ёлку?",
+     "en": "Who brings the tree home?",
+     "type": "mc",
+     "options": [
+      "Мама",
+      "Дедушка",
+      "Папа",
+      "Дети"
+     ],
+     "answer": 2,
+     "words": [
+      "папа",
+      "приносить"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Без чего в этой семье невозможен Новый год?",
+     "en": "Without what is New Year impossible in this family?",
+     "type": "mc",
+     "options": [
+      "Без салата «Оливье»",
+      "Без подарков под ёлкой",
+      "Без писем Деду Морозу",
+      "Без гостей"
+     ],
+     "answer": 0,
+     "words": [
+      "невозможный"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "На Новый год в доме нет никого, кроме семьи.",
+     "en": "At New Year there is nobody in the house except the family.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "гость"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "Что делают взрослые после двенадцати?",
+     "en": "What do the adults do after twelve?",
+     "type": "mc",
+     "options": [
+      "Идут спать",
+      "Открывают подарки",
+      "Смотрят телевизор",
+      "Выходят на улицу"
+     ],
+     "answer": 3,
+     "words": [
+      "взрослый",
+      "выходить"
+     ],
+     "sentence": 9
+    }
+   ]
+  },
+  {
+   "id": "p0054",
+   "lv": "B1",
+   "title": "Дети и телефоны",
+   "oop": {},
+   "sentences": [
+    [
+     "Сегодня почти у каждого ученика есть свой телефон.",
+     "Today almost every pupil has their own phone."
+    ],
+    [
+     "Многие родители волнуются: дети проводят с телефоном по пять-шесть часов в день, меньше гуляют и хуже спят.",
+     "Many parents worry: children spend five or six hours a day on their phones, walk less and sleep worse."
+    ],
+    [
+     "Учителя тоже заметили, что ученикам становится труднее слушать на уроке.",
+     "Teachers have also noticed that it is becoming harder for pupils to listen in class."
+    ],
+    [
+     "С другой стороны, телефон — это не только игры и видео.",
+     "On the other hand, a phone is not only games and videos."
+    ],
+    [
+     "С его помощью можно быстро найти нужную информацию, учить языки и поддерживать связь с семьёй.",
+     "With it you can quickly find the information you need, learn languages and keep in touch with family."
+    ],
+    [
+     "Кроме того, родителям спокойнее, когда они могут в любой момент позвонить ребёнку.",
+     "Besides, parents feel calmer when they can call their child at any moment."
+    ],
+    [
+     "Специалисты считают, что запретить телефон полностью не нужно.",
+     "Specialists believe that there is no need to ban phones completely."
+    ],
+    [
+     "Гораздо важнее договориться о правилах: например, не пользоваться телефоном за столом и за час до сна.",
+     "It is much more important to agree on rules: for example, not using the phone at the table or for an hour before bed."
+    ],
+    [
+     "И, конечно, лучший пример для детей — сами родители.",
+     "And of course, the best example for children is the parents themselves."
+    ],
+    [
+     "Если мама и папа весь вечер смотрят в телефон, трудно ждать, что ребёнок будет вести себя по-другому.",
+     "If Mum and Dad look at their phones all evening, it's hard to expect the child to behave differently."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Многие родители боятся, что дети слишком долго сидят в телефоне.",
+     "en": "Many parents are worried that children spend a long time on their phones.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "родитель",
+      "волноваться"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Что хорошего есть в телефоне, по мнению автора?",
+     "en": "What is good about a phone, according to the author?",
+     "type": "mc",
+     "options": [
+      "Можно меньше спать",
+      "Можно не ходить в школу каждый день",
+      "Можно быстро найти информацию",
+      "Можно не гулять"
+     ],
+     "answer": 2,
+     "words": [
+      "найти",
+      "информация"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "Специалисты думают, что детям нужно полностью запретить телефоны.",
+     "en": "Specialists think that phones should be completely banned for children.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "специалист",
+      "полностью"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "Что, по мнению специалистов, важнее всего?",
+     "en": "What, according to specialists, is most important?",
+     "type": "mc",
+     "options": [
+      "Договориться о правилах",
+      "Купить ребёнку новый телефон",
+      "Проверять телефон ребёнка каждый день",
+      "Больше играть в игры вместе"
+     ],
+     "answer": 0,
+     "words": [
+      "правило",
+      "договориться"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "Кто лучший пример для детей?",
+     "en": "Who is the best example for children?",
+     "type": "mc",
+     "options": [
+      "Учителя",
+      "Друзья",
+      "Специалисты",
+      "Родители"
+     ],
+     "answer": 3,
+     "words": [
+      "пример",
+      "родитель"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0055",
+   "lv": "B1",
+   "title": "Как я научился готовить",
+   "oop": {
+    "солёный": "salty"
+   },
+   "sentences": [
+    [
+     "До тридцати лет я вообще не умел готовить.",
+     "Until I was thirty I couldn't cook at all."
+    ],
+    [
+     "Пока я жил с родителями, еду всегда готовила мама, а потом я ел в ресторанах или покупал готовые обеды.",
+     "While I lived with my parents, Mum always cooked, and later I ate in restaurants or bought ready-made meals."
+    ],
+    [
+     "Всё изменилось, когда я встретил свою будущую жену.",
+     "Everything changed when I met my future wife."
+    ],
+    [
+     "Оказалось, что она тоже почти не умеет готовить, и мы решили учиться вместе.",
+     "It turned out that she could hardly cook either, and we decided to learn together."
+    ],
+    [
+     "Сначала мы смотрели видео в интернете и повторяли каждый шаг.",
+     "At first we watched videos on the internet and repeated every step."
+    ],
+    [
+     "Конечно, было много ошибок: то суп был слишком солёным, то мясо становилось чёрным.",
+     "Of course, there were a lot of mistakes: sometimes the soup was too salty, sometimes the meat turned black."
+    ],
+    [
+     "Однажды мы пригласили друзей на ужин, и рыба получилась такой ужасной, что пришлось заказать еду из ресторана.",
+     "Once we invited friends to dinner, and the fish turned out so terrible that we had to order food from a restaurant."
+    ],
+    [
+     "Но со временем у нас стало получаться.",
+     "But in time we started to succeed."
+    ],
+    [
+     "Теперь по выходным мы любим готовить что-то новое, а наши друзья сами просят пригласить их на ужин.",
+     "Now at weekends we love cooking something new, and our friends themselves ask to be invited to dinner."
+    ],
+    [
+     "Самое главное, что я понял: готовить — это не трудно, а очень интересно.",
+     "The main thing I've understood: cooking isn't hard, it's very interesting."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Кто готовил, когда автор жил с родителями?",
+     "en": "Who cooked when the author lived with his parents?",
+     "type": "mc",
+     "options": [
+      "Папа",
+      "Мама",
+      "Бабушка",
+      "Он сам"
+     ],
+     "answer": 1,
+     "words": [
+      "родитель",
+      "мама"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Жена автора с самого начала отлично готовила.",
+     "en": "The author's wife cooked excellently from the very start.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "оказаться",
+      "уметь"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Как они учились готовить?",
+     "en": "How did they learn to cook?",
+     "type": "mc",
+     "options": [
+      "На курсах",
+      "По книгам бабушки",
+      "По видео из интернета",
+      "С помощью друзей"
+     ],
+     "answer": 2,
+     "words": [
+      "видео",
+      "интернет"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "Однажды ужин для друзей не получился.",
+     "en": "Once the dinner for friends didn't turn out well.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "пригласить",
+      "рыба"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "Что понял автор?",
+     "en": "What has the author understood?",
+     "type": "mc",
+     "options": [
+      "Что готовить интересно",
+      "Что готовить очень трудно",
+      "Что лучше есть в ресторане",
+      "Что жена готовит лучше"
+     ],
+     "answer": 0,
+     "words": [
+      "главный",
+      "понять"
+     ],
+     "sentence": 9
+    }
+   ]
+  },
+  {
+   "id": "p0056",
+   "lv": "B1",
+   "title": "Конкурс фотографий",
+   "oop": {
+    "фотограф": "photographer"
+   },
+   "sentences": [
+    [
+     "Городская библиотека проводит конкурс фотографий «Мой город в разное время года».",
+     "The city library is holding a photo competition, \"My City in Different Seasons\"."
+    ],
+    [
+     "Участвовать могут все жители города старше четырнадцати лет.",
+     "All residents of the city over fourteen can take part."
+    ],
+    [
+     "Каждый участник может прислать не больше трёх фотографий.",
+     "Each participant may send no more than three photos."
+    ],
+    [
+     "На фотографиях должен быть наш город: улицы, парки, реки, люди.",
+     "The photos must show our city: streets, parks, rivers, people."
+    ],
+    [
+     "Фотографии можно сделать на телефон или на хорошую камеру, это не важно.",
+     "The photos can be taken on a phone or on a good camera, it doesn't matter."
+    ],
+    [
+     "Фотографии нужно отправить по электронной почте до конца марта.",
+     "Photos must be sent by email by the end of March."
+    ],
+    [
+     "В письме укажите своё имя, возраст и номер телефона, а также расскажите, где и когда была сделана каждая фотография.",
+     "In the email give your name, age and phone number, and also say where and when each photo was taken."
+    ],
+    [
+     "Лучшие работы выберут известные фотографы и художники нашего города.",
+     "The best entries will be chosen by well-known photographers and artists from our city."
+    ],
+    [
+     "Победителей объявят в начале апреля.",
+     "The winners will be announced at the beginning of April."
+    ],
+    [
+     "Лучшие фотографии покажут на выставке в библиотеке, а авторы трёх лучших работ получат подарки.",
+     "The best photos will be shown at an exhibition in the library, and the authors of the three best entries will receive prizes."
+    ],
+    [
+     "Если у вас есть вопросы, звоните нам с понедельника по пятницу.",
+     "If you have any questions, call us from Monday to Friday."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Кто может участвовать в конкурсе?",
+     "en": "Who can take part in the competition?",
+     "type": "mc",
+     "options": [
+      "Только студенты",
+      "Только дети",
+      "Все, кому больше четырнадцати",
+      "Только художники и фотографы города"
+     ],
+     "answer": 2,
+     "words": [
+      "житель",
+      "участвовать"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Каждый участник может прислать пять фотографий.",
+     "en": "Each participant may send five photos.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "участник",
+      "прислать"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Как нужно отправить фотографии?",
+     "en": "How should the photos be sent?",
+     "type": "mc",
+     "options": [
+      "По электронной почте",
+      "Принести в библиотеку",
+      "Отправить по телефону",
+      "Дать художникам"
+     ],
+     "answer": 0,
+     "words": [
+      "отправить",
+      "почта"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Имена победителей станут известны в апреле.",
+     "en": "The winners' names will become known in April.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "победитель",
+      "объявить"
+     ],
+     "sentence": 8
+    },
+    {
+     "q": "Где покажут лучшие фотографии?",
+     "en": "Where will the best photos be shown?",
+     "type": "mc",
+     "options": [
+      "В городском парке",
+      "В музее",
+      "На сайте города",
+      "В здании библиотеки"
+     ],
+     "answer": 3,
+     "words": [
+      "выставка",
+      "библиотека"
+     ],
+     "sentence": 9
+    }
+   ]
+  },
+  {
+   "id": "p0057",
+   "lv": "B1",
+   "title": "Куда поехать в отпуск?",
+   "oop": {
+    "плавать": "swim",
+    "жаркий": "hot (weather)"
+   },
+   "sentences": [
+    [
+     "— Лена, нам пора решать, куда мы поедем в отпуск.",
+     "\"Lena, it's time we decided where we're going on holiday.\""
+    ],
+    [
+     "— Я уже давно решила: хочу на море, в Турцию или в Египет.",
+     "\"I decided long ago: I want to go to the sea, to Turkey or Egypt.\""
+    ],
+    [
+     "Лежать на солнце у моря, плавать и ничего не делать!",
+     "Lie in the sun by the sea, swim and do nothing!"
+    ],
+    [
+     "— Опять море? Мы каждый год ездим на море.",
+     "\"The sea again? We go to the sea every year.\""
+    ],
+    [
+     "Давай в этот раз поедем куда-нибудь, где можно что-то посмотреть: например, в Италию или в Грецию.",
+     "Let's go somewhere this time where there is something to see: for example, Italy or Greece."
+    ],
+    [
+     "— Там будет очень жарко в августе, а ходить по музеям в такую погоду я не хочу.",
+     "\"It'll be very hot there in August, and I don't want to walk around museums in that weather.\""
+    ],
+    [
+     "— А если поехать не в августе, а в июне?",
+     "\"And what if we go in June instead of August?\""
+    ],
+    [
+     "— В июне у меня на работе важный проект, я не смогу взять отпуск.",
+     "\"In June I have an important project at work, I won't be able to take leave.\""
+    ],
+    [
+     "— Хорошо. Тогда давай так: неделю на море, а потом неделю в городе.",
+     "\"OK. Then let's do this: a week at the sea and then a week in a city.\""
+    ],
+    [
+     "— Отличная идея! Так мы оба будем довольны.",
+     "\"Great idea! That way we'll both be happy.\""
+    ],
+    [
+     "Вечером они сели за компьютер и начали смотреть билеты.",
+     "In the evening they sat down at the computer and started looking at tickets."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Куда хочет поехать Лена?",
+     "en": "Where does Lena want to go?",
+     "type": "mc",
+     "options": [
+      "В Италию",
+      "На море",
+      "В горы",
+      "К родителям"
+     ],
+     "answer": 1,
+     "words": [
+      "хотеть",
+      "море"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Семья уже много раз отдыхала на море.",
+     "en": "The family has already holidayed at the sea many times.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "каждый",
+      "год"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Что Лена не хочет делать в такую погоду?",
+     "en": "What doesn't Lena want to do in such weather?",
+     "type": "mc",
+     "options": [
+      "Плавать в море",
+      "Лежать на солнце",
+      "Отдыхать на море",
+      "Ходить по музеям"
+     ],
+     "answer": 3,
+     "words": [
+      "музей",
+      "погода"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Лена может взять отпуск в июне.",
+     "en": "Lena can take leave in June.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "июнь",
+      "проект"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "Какое решение они приняли?",
+     "en": "What decision did they make?",
+     "type": "mc",
+     "options": [
+      "Неделя на море и неделя в городе",
+      "Две недели на море",
+      "Остаться дома",
+      "Поехать в июне в Италию"
+     ],
+     "answer": 0,
+     "words": [
+      "неделя",
+      "море"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0058",
+   "lv": "B1",
+   "title": "Выставка, которую стоит увидеть",
+   "oop": {},
+   "sentences": [
+    [
+     "В субботу я наконец сходила на выставку «Москва сто лет назад», о которой сейчас говорит весь город.",
+     "On Saturday I finally went to the exhibition \"Moscow a Hundred Years Ago\", which the whole city is talking about now."
+    ],
+    [
+     "Выставка проходит в Историческом музее и будет работать до конца декабря.",
+     "The exhibition is being held at the Historical Museum and will be open until the end of December."
+    ],
+    [
+     "Здесь собраны старые фотографии, письма, одежда и даже билеты в театр того времени.",
+     "Old photos, letters, clothes and even theatre tickets from that time are collected here."
+    ],
+    [
+     "Больше всего мне понравился зал, где можно увидеть, как выглядела обычная квартира в те годы.",
+     "Most of all I liked the hall where you can see what an ordinary flat looked like in those years."
+    ],
+    [
+     "Там стоят настоящие стол и стулья, на столе лежат книги и газеты, а из старого радио звучит музыка.",
+     "There are a real table and chairs, books and newspapers lie on the table, and music plays from an old radio."
+    ],
+    [
+     "Такое чувство, что хозяева только что вышли и сейчас вернутся.",
+     "It feels as if the owners have just gone out and will be back any moment."
+    ],
+    [
+     "Ещё хочу сказать о сотрудниках музея: они с удовольствием отвечают на вопросы и рассказывают интересные истории.",
+     "I also want to mention the museum staff: they are happy to answer questions and tell interesting stories."
+    ],
+    [
+     "Единственная проблема — очереди.",
+     "The only problem is the queues."
+    ],
+    [
+     "В выходные придётся ждать минут сорок, поэтому лучше приходить утром в понедельник или в среду.",
+     "At weekends you'll have to wait about forty minutes, so it's better to come on a Monday or Wednesday morning."
+    ],
+    [
+     "Я думаю, что эту выставку стоит увидеть всем, кто любит историю.",
+     "I think everyone who loves history should see this exhibition."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Выставку можно посмотреть до конца года.",
+     "en": "The exhibition can be seen until the end of the year.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "музей",
+      "конец"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Какой зал больше всего понравился автору?",
+     "en": "Which hall did the author like most?",
+     "type": "mc",
+     "options": [
+      "Зал с одеждой",
+      "Зал с письмами и билетами",
+      "Зал, где показана старая квартира",
+      "Зал с картинами"
+     ],
+     "answer": 2,
+     "words": [
+      "зал",
+      "квартира"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "Что автор говорит о сотрудниках музея?",
+     "en": "What does the author say about the museum staff?",
+     "type": "mc",
+     "options": [
+      "Они с радостью отвечают на вопросы",
+      "Они работают очень медленно и мало говорят",
+      "Они не знают истории",
+      "Их почти не видно"
+     ],
+     "answer": 0,
+     "words": [
+      "сотрудник",
+      "вопрос"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "В выходные в музее нет очереди.",
+     "en": "At weekends there is no queue at the museum.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "выходной",
+      "ждать"
+     ],
+     "sentence": 8
+    },
+    {
+     "q": "Когда лучше приходить на выставку?",
+     "en": "When is it better to come to the exhibition?",
+     "type": "mc",
+     "options": [
+      "В субботу вечером",
+      "Утром в начале недели",
+      "В воскресенье днём",
+      "В конце декабря"
+     ],
+     "answer": 1,
+     "words": [
+      "утро"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0059",
+   "lv": "B1",
+   "title": "Вторая жизнь старой библиотеки",
+   "oop": {},
+   "sentences": [
+    [
+     "В небольшом городе Озёрске произошло важное событие: после двух лет ремонта снова начала работать старая городская библиотека.",
+     "An important event has happened in the small town of Ozyorsk: after two years of renovation the old city library has opened again."
+    ],
+    [
+     "Здание было построено больше ста лет назад, и в последние годы оно было в очень плохом состоянии.",
+     "The building was built more than a hundred years ago, and in recent years it was in very poor condition."
+    ],
+    [
+     "Деньги на ремонт собирали всем городом: жители, местные компании и даже ученики.",
+     "The whole town raised money for the renovation: residents, local companies and even pupils."
+    ],
+    [
+     "Теперь библиотеку просто не узнать.",
+     "Now the library is simply unrecognisable."
+    ],
+    [
+     "Кроме обычного зала с книгами, здесь есть комната для детей, место для работы с компьютерами и небольшое место, где можно выпить кофе.",
+     "Besides the usual hall with books, there is a children's room, a place for working with computers and a small spot where you can have a coffee."
+    ],
+    [
+     "По вечерам в библиотеке будут проходить встречи с писателями, концерты и уроки иностранных языков.",
+     "In the evenings the library will host meetings with writers, concerts and foreign language lessons."
+    ],
+    [
+     "«Мы хотели, чтобы библиотека стала местом, куда люди приходят не только за книгами, но и просто общаться», — говорит директор библиотеки Ольга Иванова.",
+     "\"We wanted the library to become a place where people come not only for books but simply to socialise,\" says library director Olga Ivanova."
+    ],
+    [
+     "В первую неделю сюда пришли больше двух тысяч человек.",
+     "In the first week more than two thousand people came here."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Сколько времени шёл ремонт?",
+     "en": "How long did the renovation go on?",
+     "type": "mc",
+     "options": [
+      "Один год",
+      "Пять лет",
+      "Сто лет",
+      "Два года"
+     ],
+     "answer": 3,
+     "words": [
+      "ремонт",
+      "год"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "Здание библиотеки всегда было в хорошем состоянии.",
+     "en": "The library building was always in good condition.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "здание",
+      "состояние"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "Кто дал деньги на ремонт?",
+     "en": "Who gave money for the renovation?",
+     "type": "mc",
+     "options": [
+      "Только государство",
+      "Жители, компании и ученики",
+      "Один богатый человек",
+      "Иностранная компания"
+     ],
+     "answer": 1,
+     "words": [
+      "деньги",
+      "ремонт"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "В библиотеке можно будет изучать иностранные языки.",
+     "en": "It will be possible to study foreign languages at the library.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "вечер",
+      "язык"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "Чем хотели сделать библиотеку?",
+     "en": "What did they want the library to become?",
+     "type": "mc",
+     "options": [
+      "Местом, где люди встречаются и общаются",
+      "Самым большим зданием в городе",
+      "Музеем старых книг",
+      "Школой для детей"
+     ],
+     "answer": 0,
+     "words": [
+      "место",
+      "книга"
+     ],
+     "sentence": 6
+    }
+   ]
+  },
+  {
+   "id": "p0060",
+   "lv": "B1",
+   "title": "Сосед сверху",
+   "oop": {
+    "тонкий": "thin (walls)"
+   },
+   "sentences": [
+    [
+     "Когда мы переехали в новую квартиру, первые недели были просто прекрасными.",
+     "When we moved into the new flat, the first weeks were simply wonderful."
+    ],
+    [
+     "Но потом в квартире над нами появился новый сосед, и начались проблемы.",
+     "But then a new neighbour appeared in the flat above us, and the problems began."
+    ],
+    [
+     "Каждый вечер, часов с одиннадцати, у него играла музыка, так что мы не могли спать, а иногда к нему приходили друзья до самого утра.",
+     "Every evening from about eleven o'clock music played at his place so that we couldn't sleep, and sometimes friends came over until morning."
+    ],
+    [
+     "Мы долго терпели, потому что не хотели проблем с соседом.",
+     "We put up with it for a long time because we didn't want problems with the neighbour."
+    ],
+    [
+     "Но однажды муж не смог больше ждать и пошёл к нему поговорить.",
+     "But one day my husband couldn't wait any longer and went to talk to him."
+    ],
+    [
+     "Дверь открыл очень приятный молодой человек.",
+     "A very pleasant young man opened the door."
+    ],
+    [
+     "Оказалось, что он играет в группе и работает по ночам, а стены в доме такие тонкие, что он даже не знал, что мы всё слышим.",
+     "It turned out that he played in a band and worked at night, and the walls in the building were so thin that he didn't even know we could hear everything."
+    ],
+    [
+     "Он попросил прощения и обещал играть только до десяти вечера.",
+     "He apologised and promised to play only until ten in the evening."
+    ],
+    [
+     "С тех пор мы живём спокойно.",
+     "Since then we have lived peacefully."
+    ],
+    [
+     "А недавно он пригласил нас на свой концерт, и это был один из самых интересных вечеров за последний год.",
+     "And recently he invited us to his concert, and it was one of the most interesting evenings of the past year."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Сначала жизнь в новой квартире была хорошей.",
+     "en": "At first life in the new flat was good.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "квартира",
+      "первый"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "Что мешало семье по вечерам?",
+     "en": "What bothered the family in the evenings?",
+     "type": "mc",
+     "options": [
+      "Машины на улице",
+      "Дети соседа",
+      "Музыка у соседа",
+      "Собака соседа"
+     ],
+     "answer": 2,
+     "words": [
+      "вечер",
+      "музыка"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "Почему сосед играл по ночам?",
+     "en": "Why did the neighbour play at night?",
+     "type": "mc",
+     "options": [
+      "Он работает по ночам",
+      "Он не любит соседей",
+      "У него был праздник",
+      "Он учится играть"
+     ],
+     "answer": 0,
+     "words": [
+      "оказаться",
+      "работать"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "Сосед сказал, что будет играть до двух часов ночи.",
+     "en": "The neighbour said he would play until two in the morning.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "обещать",
+      "вечер"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "Куда сосед пригласил семью?",
+     "en": "Where did the neighbour invite the family?",
+     "type": "mc",
+     "options": [
+      "На ужин",
+      "В гости",
+      "На день рождения",
+      "На свой концерт"
+     ],
+     "answer": 3,
+     "words": [
+      "пригласить",
+      "концерт"
+     ],
+     "sentence": 9
+    }
+   ]
+  }
+ ]
+}

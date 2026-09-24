@@ -42,6 +42,25 @@ See `tools/REPORT.md` for the rules already in place.
 - Some sentences with fewer than 4 tokens still appear at A1 (3 of 812),
   through the shared fallback for A1 words with fewer than 2 candidates.
 
+## Reading passages
+- A native-speaker pass over the 60 texts has not been done yet; only an
+  automated QA pass plus manual QA rounds (see `tools/REPORT_passages.md`).
+- The pack is subtitle-ranked, so several everyday words are missing from
+  the word list (кафе, торт, бегать, советовать, по-русски); the 60 texts
+  avoid them. Adding these belongs in a v2 word-list pass, not the passage
+  linker.
+- 21 out-of-pack lemmas remain across the 60 passages, each needed by its
+  topic and declared with a reason (recipe steps, собеседование, спектакль,
+  зонт, приют, ёлка...); unlinked tokens otherwise are names, quoted
+  titles, and the numerals двухсот/оба.
+- The Russian passage linker rules (adjective/numeral surface reads as a
+  pack adverb, меньше -> мало, стоит/стоят disambiguation, "Тому, кто",
+  "Новый год", "Целую" sign-off, "друг другу" no-link, ellipsis sentence
+  breaks) live in vocab-engine's `packbuilder/langs/ru.py` passage hooks,
+  not in this repo.
+- Full manual QA notes and per-passage coverage/link numbers are in
+  `tools/REPORT_passages.md`.
+
 ## Engine / publishing
 - vocab-engine must be committed with langs/ru.py and the new hooks before
   `./check.sh` passes without `PACKBUILDER_PATH=../vocab-engine/tools`.
