@@ -1,0 +1,6 @@
+# Shared builder deps (spacy, wordfreq, simplemma), pinned in vocab-engine:
+-r ../engine/tools/packbuilder/requirements.txt
+# spaCy's Russian lemmatiser needs pymorphy3 (MIT) and its Russian dictionaries
+pymorphy3==2.0.6
+# spaCy Russian pipeline (model licence MIT, trained on Nerus; build time only). Also installable with: python -m spacy download ru_core_news_sm
+ru_core_news_sm @ https://github.com/explosion/spacy-models/releases/download/ru_core_news_sm-3.8.0/ru_core_news_sm-3.8.0-py3-none-any.whl
