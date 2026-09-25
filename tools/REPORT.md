@@ -44,23 +44,23 @@ Levels: {'A1': 600, 'A2': 700, 'B1': 700}. POS: {'noun': 874, 'verb': 502, 'adj'
 
 - Final sentences: **3,203**, 1,076 with audio (`https://tatoeba.org/audio/download/<audio_id>`).
 - Word coverage: 0 = 0, 1 = 8, 2 = 1992.
-- Candidate sentences (terminal punctuation, 3-14 tokens, content lemmas in pack/top-3000, >=1 link): 448,562. Rejected for a content lemma outside pack/top-3000: 224,445.
+- Candidate sentences (terminal punctuation, 3-14 tokens, content lemmas in pack/top-3000, >=1 link): 448,287. Rejected for a content lemma outside pack/top-3000: 224,445.
 - Primary word level of each sentence: {'A1': 788, 'A2': 1156, 'B1': 1259}.
 - Token-length distribution of the final set:
 
 | tokens | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| sentences | 235 | 648 | 404 | 930 | 778 | 121 | 43 | 22 | 10 | 5 | 7 |
+| sentences | 237 | 644 | 411 | 926 | 780 | 119 | 42 | 22 | 10 | 5 | 7 |
 
 ## Kelly CEFR cross-check (sanity only, not shipped)
 
-1,709 of 2,000 lemmas matched Kelly. Exact level agreement 646/1709 = 37.8%; within one level 1336/1709 = 78.2%.
+1,709 of 2,000 lemmas matched Kelly. Exact level agreement 649/1709 = 38.0%; within one level 1336/1709 = 78.2%.
 
 | pack \ kelly | A1 | A2 | B1 | B2 | C1 | C2 |
 |---|---|---|---|---|---|---|
-| **A1** | 334 | 124 | 55 | 25 | 4 | 1 |
-| **A2** | 102 | 144 | 166 | 135 | 28 | 5 |
-| **B1** | 75 | 118 | 168 | 180 | 36 | 9 |
+| **A1** | 335 | 125 | 53 | 26 | 4 | 1 |
+| **A2** | 101 | 144 | 166 | 136 | 28 | 5 |
+| **B1** | 75 | 117 | 170 | 178 | 36 | 9 |
 
 ## Top 100 by rank (lemma [pos] gloss)
 
@@ -204,4 +204,5 @@ Levels: {'A1': 600, 'A2': 700, 'B1': 700}. POS: {'noun': 874, 'verb': 502, 'adj'
   - Sensitive sentences are kept out of A1/A2: sexual content, suicide, threats/violence, dying/death wishes, weapons (shared English list + Russian terms). Rape and sexual/child abuse (`drop_all_levels`) are removed at every level; check fails on a match.
   - Gloss-level scan (shared vulgar/sexual English list): a matching sense never leads a gloss; check fails on any A1/A2 match.
 - Word ids are frozen in tools/id_map_v1.json (key: folded lemma|pos).
+- 2026-09-25: engine bumped to 059b90b (voice-init fix, no-voice notice timing, word ceiling). 8 words moved A2->B1 under the shared word-level ceiling: убить, убийство, кровь, оружие, погибнуть, убивать, секс, убийца. Band-edge shifts from re-counting: народ, область, держать A2->A1; сад, потеря, появляться, единый, выпустить, вера, использование, ответственность B1->A2. No rank, id or gloss changed.
 <!-- manual:end -->
