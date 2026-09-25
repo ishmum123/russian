@@ -158,6 +158,8 @@ automated QA pass; they have not had a native-speaker review.
 | Sentence audio | Tatoeba `sentences_with_audio.tar.bz2` | CC BY 4.0 / CC BY-SA / CC0, per clip; only these permissive clips are linked (no NC/ND) | `sentences.json[].audio`; recorders per licence in `pack/attribution.json` |
 | CEFR cross-check (not shipped) | [kotoshu/frequency-list-kelly](https://github.com/kotoshu/frequency-list-kelly) `ru.json` | research use only | sanity check only, read from `.cache/`, never copied into `pack/` |
 
+Licence: code MIT, pack data CC BY-SA 4.0, see LICENSE.
+
 No source is non-commercial. The tagger model is MIT, so this pack has no
 licence restriction beyond the CC-BY / CC-BY-SA attribution terms.
 
