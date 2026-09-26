@@ -5,7 +5,7 @@ words spanning A1-B1, each with a short English gloss and its stressed form
 (`pron`, for example соба́ка), plus example sentences with translations and,
 where the licence permits, native audio.
 
-**Live:** https://ishmum123.github.io/russian/
+**Live:** https://bannerless-studio.github.io/russian/
 
 **Script primer.** An "Алфавит" stage now runs before A1 and teaches the
 Cyrillic alphabet (33 units) with symbol-to-sound, recognition and
@@ -13,7 +13,7 @@ word-reading items. It's skippable with "I can read it" and reversible later
 from Progress.
 
 This repo holds the Russian data pack and the Russian data files its build
-reads, plus [`vocab-engine`](https://github.com/ishmum123/vocab-engine) as a
+reads, plus [`vocab-engine`](https://github.com/Bannerless-Studio/vocab-engine) as a
 git submodule at `engine/`. The engine holds the shared UI and drill logic
 and the shared pack builder, `engine/tools/packbuilder`. The builder's
 Russian rules live in `engine/tools/packbuilder/langs/ru.py`.
